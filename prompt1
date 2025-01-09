@@ -1,0 +1,35 @@
+Process
+Tools
+ComfyUI
+Techniques
+txt2img
+Generation data
+COPY ALL
+Resources used
+Vixon's Pony Styles - Detailed v1.0
+LoRA
+Detailed v1.0
+Vixon's Pony Styles - gothic neon
+LoRA
+gothic neon v1.0
+Very Small Women
+LoRA
+v1.0
+Show 4 more
+Prompt
+External Generator
+txt2img
+
+score_9, score_8_up, score_7_up, score_6_up, Expressiveh, highly detailed, intricate, g0thicPXL, d3t51l3dXLP, s1_dram, eyedetailxl, bettereyes, drkpny, detailed_eyes, perfecteyes, by boris valejjo, by serpieri, pov, t1nyg1rlz, (tiny fairy, fairy wings, naked, tiny breasts, blond hair, pixie cut, neon glowing fairy wings), wide eyed, rolled eyes, clenched teeth, (crying, tears, teardrop:1.2), large male, oversized male hand, (grabbing tiny fairy, holding tiny fairy:1.2), size difference, spreading legs, showing pussy, vaginal insertion, giant cock, hand using fairy as ona hole, giant insertion, <lora:Pony\cutesexyrobutts_style_xl_goofy.safetensors:0.45:0.45> <lora:Pony\g0th1cPXL.safetensors:0.35000000000000003:0.35000000000000003> <lora:Pony\Boris_Valejjo_Style-000003.safetensors:0.8:0.8> <lora:Pony\Expressive_H-000001.safetensors:0.75:0.75> <lora:Pony\d3t41l3dXLP.safetensors:0.4:0.4> <lora:Pony\RE-Large Insertion XL V0.2.safetensors:0.66:0.66> <lora:Pony\Very_Small_Women.safetensors:0.9:0.9>
+Show less
+Negative prompt
+
+score_6, score_5, score_4, pony, censored, 3d, watermark, signature, futanari, face out of frame, (signature, watermark, logo:1.2), (pee, peeing:1.2), asian, jewelry, (source_pony, source_anime, source_anime), (realistic:1.2)
+Show less
+Other metadata
+Guidance:
+6
+Steps:
+50
+Sampler:
+Euler
