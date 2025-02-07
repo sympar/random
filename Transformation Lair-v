@@ -1,0 +1,2088 @@
+A dark, solemn fortress looms over you.
+\
+Nestled deep in the dark woods, far out of the closest city, sits your goal. A monstrous building hidden in the shadows, stretching as far back as the eye can see. A smooth, glossy white texture stretches around the outside wall, glistening gently in the fading sunlight. A large, crimson 'R' adorns the front facade, and the set of double doors dead ahead of you. Up close, there could be no doubt.
+
+From afar, the entire building had been invisible to the naked eye. Only once you got close enough did it materialise into view. There had been rumours of Team Rocket's technology improving... but this fast?
+
+Not only that, but with all the trainers that had been going missing recently... And those strange, rubbery Pokémon...
+
+Something was very, very //wrong.//
+
+Lowering the rim of your hat, you pad slowly towards the set of double doors, eyes trained for trouble. No guards... No cameras... But that was no reason to let your guard down. The Champion had come to you specifically for help. You were the region's only hope. 
+
+Now, it's time to [[begin|Name Selection]]
+You pause for a moment to fish through your pockets - one last check to make sure you're prepared. 
+
+Whilst searching, your hand brushes against your  linkappend "Trainer Card," 
+	 replace "#id"  You pull it out and inspect it, running your thumb across the engraved text on the front. It shows your name, as well as a stamp for all the Gym Badges you've earned so far.
+    
+    Your name is...
+    
+    textbox "$playerName" "" "Name Confirmation" autofocus 
+    /replace  the slim plastic cold to the touch.
+
+
+[[Yes, that's right!|Pokémon Selection]]
+
+And of course, where would you be without your trusty sidekick? You brush your hand over the sole pokéball on your belt, your heart swelling with affection. He's been with you through thick and thin. Of course you had to bring him along.
+
+He's a...
+
+You squint hard at the shiny plastic. Did they...make a typo when they were spelling out your name?
+
+Your name is...
+
+"Courtyard" 
+
+You are standing in the courtyard, the large Team Rocket complex towering above you. Before you sits the entrance - a set of double doors adorned with the Team Rocket logo. A metal box with a blinking blue light sits attached to the wall nearby.
+
+To the left, you spot a large metal gate, and beyond it a path the leads around the back of the building.
+
+Behind you, the deep dark forest beckons you home, but you can't run away. People are counting on you. You have to push on!
+
+[[Approach the front doors|entrance]]
+[[Check the metal gate|metal gate]]
+
+Curious, you walk towards the gate, stopping just short of it. It's rust-free from top to bottom, and upon closer inspection there doesn't seem to be a lock on it. Instead, a metal box sits off to the side, the lights on it flashing a sharp red. 
+
+
+You step up to the doors but they don't open. That much you should have expected, but part of you is still disappointed. Team Rocket were incompetent at a lot of things... Couldn't this be one of them?
+
+You're about to turn away and look for another path when you spot something blue out of the corner of your eye. In the corner, nestled between the wall and door, lays a discarded plastic card.
+
+  "Pick it up"  You reach down and grab it. There's a red 'R' emblazened on the front, and the surrounding plastic has a deep blue tinge to it. It looks a lot like the flashing blue light on the door. 
+
+ set $hasBluecard to true 
+ link "Press the card to the metal box"  script state.display(state.active.title, null, "back") /script  /link 
+ 
+
+
+Without hesitating you smack the keycard against the $securityBox. It beeps once and the blue light disappears. With a click, the door unlocks, sliding open to let you in. 
+
+[[Continue inside|Main Entrance]]
+[[Go back to the courtyard|The Courtyard]]
+ "Ground Floor: Entrance" 
+ set $securityBox to "Security Box" 
+ first 
+	Well, turns out Team Rocket ARE just as usefully incompetent as always!
+
+The door slides shut behind you, locking with a click and a beep. Stretching out before you is a long, corridor that breaks off into several different paths. The walls and floors shimmer white, the bright strip light bouncing off of it in a dazzling display. You're finally in... Now you just have to find your way to the boss.
+ finally You return to the hallway and re-orient yourself.
+
+You stare down the long corridor, breath quick and urgent. There's no one around, but you still feel uneasy. You should take care while exploring.
+ /first 
+
+[[Continue straight down the corridor|MainCor Go straight]]
+
+[[Waiting Area|Waiting Area]]
+
+ if hasVisited("Table") [[Staff Rooms|Staff Rooms]] /if 
+
+[[Return to the courtyard|The Courtyard]]
+ 
+
+You come across another set of double doors, the silver steel sparkling in the light. To the right sits a security box, the light flashing green.
+
+
+  You press your blue security card to the flashing box, but nothing happens. Strange... Maybe you need a different keycard to get through?
+ 
+
+
+"Employee Training Room" 
+    	You press the blue keycard to the security box, and after a short beep the door slides open to let you through.
+        
+        [[Continue into the Employee Training Room|Training Room]]
+       
+   
+
+"Staff Closet" 
+
+            	You turn and press the blue keycard to the security box, and after a short beep the door slides open to let you through.
+       
+   
+                                
+[[Go back to the hallway|Main Entrance]] Ground Floor: Waiting Area" 
+You turn right and happen upon an open area. A small coffee table sits in the centre of the square room, littered with various plates and mugs. Two red couches line the back and side walls, with a potted plant nudged between them. It looks like some kind of waiting area... though clearly there's no one around right now.
+
+[[Table]]
+
+"Ground Floor: Employee Training Room" 
+The room is smothered by shadow, but the moment you step foot into it the lights flicker on. A low, mechanical hum sounds to your right, and you turn to see a large computer screen on the opposite wall. There's a metallic desk beneath it, complete with a mouse and keyboard, but nothing else. The rest of the room is barren, with only a single chair in front of the desk.
+
+  "Examine the screen"  
+	You move deeper into the room and stop just before the desk, staring up at the large computer monitor. Bold, red text scrolls across the screen on repeat, blinking every so often.
+    
+'INITIATE EMPLOYEE TRAINING TO PROCEED. PRESS ANY KEY TO BEGIN'  
+
+Frowning, you glance down at the keyboard. Employee training? What could you possibly need that for?
+
+[[Touch the Keyboard|Training Begins]]
+\
+ return "Leave the room" 
+ 
+"Ground Floor: Staff Closet" 
+\
+You enter into a small, dark room littered with boxes of different sizes. There are clear labels on each, ranging from "Rocket Uniform" to "Rocket Hat" to "Rocket Boots". Every type of Team Rocket apparel you could dream of is in here. 
+
+There's another box sitting in the far corner, though it doesn't have a label on it.
+
+[[Uniform Boxes]]
+\
+[[Unlabelled Box|Rattatta Suit]]
+\
+[[Exit the room|Staff Rooms]]
+\
+The moment you press down on one of the keys, the lights in the room flare before turning a dim red. The screen flashes and the rolling text vanishes, replaced instead by a dark gray image, the Team Rocket logo front and centre in the background.
+
+  "Continue"  
+	//"Welcome, new employee! Before we grant you access to the building, we need you to complete a few simple questions to make sure you're smart enough to join our team."
+    
+    "Incorrect answers will be met with re-education. Please answer correctly.//
+    /type  
+   
+        "Continue"  
+  The screen flashes again, and a question appears. Beneath it sits a dialogue window, the mouse cursor automatically focused and blinking, waiting for your answer.
+   
+  	"What type of Pokémon is Charmeleon?"
+     /type 
+    
+  typesim "Fire Type" autofocus  goto "Training 2"  /typesim  
+   <tw-passagedata pid="20" name="Training 2" tags="noreturn" position="400,600" size="100,100"> set _correct to false 
+ type 40ms start 0s 
+	//"Fire Type! That's right!"
+    
+    "Okay. Now, please arrange the following words in the correct order. Click the button when you are finished."
+    
+
+   
+ type 30ms start 2s 
+	//"I'm sorry. It appears you are not suitable to join our team. Please stand by for re-education."//
+     /type 
+	
+    timed 6s  With a pop, the entire screen turns an inpenetrable black, and the whirring of machinery starts up all over again. You spot a panel opening in the centre of the desk, right in front of the keyboard, and from within rises a large metallic hose, a sticky red substance drooling from the nozzle. A robotic arm holds the underside of it, guiding it up to eye level. 
+   
+   Brows furrowed, you stare at it for a moment before something inside it clicks. The hose jumps once, twice, and then comes to a rest. The sound of bubbling liquid pours out from inside, and an uneasy chill runs down your spine.
+   
+     "Leave the room"  
+    You're seconds away from bolting when a torrent of cold, red goo blasts you in the face.
+ 
+A huge glob of it envelops your head, pushing into your ears, mouth and nose, whilst the rest of it rolls down your body, dissolving your clothes and clinging to your skin like cement. Your hands shoot up on instinct, clawing and tearing at your face.
+ 
+ "MmmmpH!? MmMm?!"
+ 
+ The rubber stretches but doesn't break.  You yank it away from your face until your arms ache, until your shoulders pop, until you feel it peeling from your skin--but it's not enough. It snaps right back into place once you reach your limit, the force of it sending you staggering backwards. All the while the rest of it coils around your legs, a pair of thick, winding tendrils burning through your pants and contricting both legs down to the knee. Your pokéball clatters to the ground and rolls away out of reach. 
+ 
+  linkappend "'MmfgpH!'"   Your voice comes out weird and muffled under the layers of goo. Every groan becomes louder, more strained, more desperate. The goo leaps onto your arms and rushed down the length of your sleeves. Within seconds your hands are gone, consumed in the goo, and with a sickeningly wet slurp the goo stretches down and consumes your feet as well. 
+ 
+   "Fight it!"   Squirming. Writhing. There's no give. No weakness. The rubber groans as it tightens around your form, clinging to you like skin-tight latex. Then it's pulsing and moving, stretching and twisting, forming shapes. Little trails of fire wind up your skin as the rubber reshapes around you. Your face tingles and aches, and when you reach up you can feel the rubber stretching out into a short, stubby snout, the bones in your face popping as they follow suit. The sensations tear down your hands and feet, rubbery claws erupting from the ends of the digits. A horrible, aching pressure plunges to the base of your spine until a thick, rubber tube bursts out of it, your body filling the space with a fleshy, stumpy tail. It whips around behind you as it grows, lashing into the floor, and with a loud crash the computer chair goes sailing across the room away from you. 
+ 
+Panting hard. Legs shaking. You crumble to your knees, still groping your changing face as a rubbery horn bursts from your scalp, finally able to tear the goo away from your eyes. The world trickles back into view piece by piece, spinning and turning as the rubber starts to solidify to your body. It squeaks when you run your clawed hands over it, cool and slightly sticky under your fingers.
+
+  "Get it off!"  You squeeze it between your fingers and flinch. It hurts! When you pull on it, you feel the tension, feel your skin stretching, and when you dab curiously at your snout you can feel your breath coming from your nostrils. 
+
+Panic knots in your stomach.   "Look at yourself"  You whip your head down, eyes bulging. Your body is completely covered in the red rubber, streaks of light bouncing off your chest and limbs. A paler cream colour coats your stomach and dips beneath, rolling up the length of your tail. 
+
+You look up slowly, shaking, and gawk as you catch your refelction in the monitor. Instead of a human face, there's a draconic snout. A single red horn extends from your skull.
+
+C-Charmeleon?
+
+W-What...? What's...?
+
+There's a flash and a beep. The computer screen bursts back to life,  linkappend "more text rolling across the screen."  
+
+Welcome to your new life! If you have any complaints, please speak now into the microphone!"// /type 
+
+  "'What's going on?'" 
+	"Char! C-Char?"
+  "'No! What did you do to me?'" 
+"Char! Char char! C-Ch...ar!?"
+
+You freeze, mouth agape, breath hard and fast. Y-You... Why can't you speak? What's going on?  linkappend "What's happening?"   
+
+ type 30ms "Thank you for your input. We will be along shortly to collect you for training.' /type 
+
+As if on cue, the door behind you slides open. Two rubber-clad Team Rocket members stride into the room, grinning as they approach, one of them carrying a collar and lead.
+
+"Poor sap," one of them says, though he doesn't sound too sad. "First day on the job, too. Guess he musta gotten a hard question."
+
+There's nowhere to run. The tiny room is like a prison, and the two men crowd you quickly, restraining you on both sides. A panicked wail leaves your throat as they wrestle the collar around your neck and secure it into place, the thick loop of rubber instantly adhering to your skin and sinking into place.
+
+Then they're yanking you forward by the lead, guiding you towards the door.
+
+"C'mon..." one of them says, a manic twinkle in his eyes. "Lets get our new Charmeleon all trained up."
+
+With a panicked squawk you slam your heels into the ground, fumbling helplessly with the collar. Grunting. Groaning. Eyes wide and bulging and full of fear.
+
+  "'No! No I'm a human! Please help!'" 
+	"Char! C-Char! Char char char!"
+      "'I'm not a Pokémon! I'm not a Pokémon!'" 
+    "Chaaar! Char! CHAR!"
+    
+    The two men just laugh, yanking so hard on the leash that you stumble forward. With another forceful tug they drag you out and away from the room, ignoring your desperate pleas for help.
+ 
+    [[This is your life, now. Permanently.|BAD END]]
+    
+
+The screen flashes one more time before turning a bright, vibrant green.
+
+ type 20ms start 2s 
+	//'Congratulations! You are worthy of joining our cause. Please collect your employee keycard from the  linkappend "slot on the right'". //
+    
+    	 replace "#collect"  
+        		There's a whirr, then a pop. A green keycard shoots out of the slot to your right and sits in place, waiting to be grabbed.
+                
+              "Take it"  You grab the card and stuff it in your pocket. The screen powers down and the door behind you clicks as it unlocks.
+            
+            ...//That// was their aptitude test? Only an idiot could get that wrong!
+            
+  You can't see anything else to do here. Maybe you should [[look somewhere else?|Staff Rooms][$hasGreencard to true]]
+
+
+You float through the thick, meandering darkness. Weightless. Thoughtless.
+
+  "Until suddenly, a voice rings out through your head."  
+"$playerName! There's a time and place for everything but not now!"
+
+The world spins uncontrollably. Light peels through the corners of the void before blossoming into a supernova.
+
+You land hard on your feet, back where you were moments ago. For some reason your head aches, thoughts fuzzy and unclear. 
+
+What... What just happened?
+
+You rack your brain but can't remember. You... You were doing  something . But what?
+
+You wait a few moments, trying and failing to grasp the memory, but it's gone. Shaking your head, you straighten your back and look forward. You have a mission.
+
+
+"Ground Floor: Elevator Hall" 
+
+You step out into a long hallway, which stretches far out to either side of you. Behind you, on the right-hand wall, there's set of elevators, though one doesn't seem to be working. Further down you can see another closed door, though on closer inspection there appear to be vines and leaves snaking down the front.
+
+To your left you spot a stairwell leading down into inky, never-ending darkness.
+
+<hr>
+[[Call the elevator|Elevator]]
+[[Broken Elevator|Secret Lab Elevator]]
+[[Vine-covered Door]]
+[[Stairs|Ground Floor Stairs]]
+[[Search for more Team Rocket Grunts|Easy Battle]]
+[[Main Entrance|Main Entrance]]
+
+
+"Elevator" 
+There's a loud chime as you press the elevator button, and seconds later it arrives, gliding onto the scene smoothly. The door opens and you step inside, turning to study the buttons. 
+
+     button [[Exit the elevator|$return]] 
+     /button 
+    <tw-passagedata pid="27" name="Elevator Hall Basement" tags="" position="1000,1300" size="100,100"> set $location to "Basement: Elevator Hall" 
+You step out into the hallway, the elevator doors sliding shut behind you. 
+
+A blast of chilly air hits you as you step away from it - an unpleasant, clinical kind of cold. Almost like being in a hospital. Discarded desks and containers litter the room, along with a dusty computers. 
+
+There's a set of doors to either side of you, and another long hallway just around the corner. The security box here has a red light, blinking impatiently.
+<hr>
+[[Hallway Door|Basement Main Hall]]
+\
+
+ "Basement" 
+	The button beeps gently when you press it, and the doors slide shut behind you as the elevator begins moving.
+    
+    Seconds later, the elevator purrs to a gentle stop, and the doors glide open seconds later. 
+    
+    A gentle, synthetic voice speaks above you.
+    
+    "Welcome to the Basement. [[Please exit the elevator|Elevator Hall Basement]]"
+ "Ground" 
+	The button beeps gently when you press it, and the doors slide shut behind you as the elevator begins moving.
+    
+    Seconds later, the elevator purrs to a gentle stop, and the doors glide open seconds later. 
+    
+    A gentle, synthetic voice speaks above you.
+    
+    "Welcome to the Ground Floor. [[Please exit the elevator|Elevator Hall Ground Floor]]."
+ "First" 
+		The button beeps gently when you press it, and the doors slide shut behind you as the elevator begins moving.
+    
+    Seconds later, the elevator purrs to a gentle stop, and the doors glide open seconds later. 
+    
+    A gentle, synthetic voice speaks above you.
+    
+    "Welcome to the First Floor. [[Please exit the elevator|Elevator Hall First Floor]]."
+ "Second" 
+	The button beeps gently when you press it, and the doors slide shut behind you as the elevator begins moving.
+    
+    Seconds later, the elevator purrs to a gentle stop, and the doors glide open seconds later. 
+    
+    A gentle, synthetic voice speaks above you.
+    "Welcome to the Second Floor. [[Please exit the elevator|Elevator Hall Second Floor]]."
+"Secret Lab" 
+	The button groans as you press it, the blue rim lights surrounding it blinking randomly. It shudders and takes off, groaning down the elevator shaft.
+    
+    Trapped in the rusted crypt of an elevator, tt feels like hours before you get anywhere. The old elevator rattles and shakes as it slows, the doors opening with a loud CHUNK after a few seconds of eerie silence.
+    
+   There is no synthetic voice to greet you this time. The cold, sterile air that wafts into the elevator makes your skin stand on end.
+    
+   [[You shouldn't be here|Elevator Hall Secret Lab]].
+"First Floor: Elevator Hall" 
+You step out into the hallway, the elevator doors sliding shut behind you. 
+
+Just around the corner lies a set of double doors with a green security box. Through the windows you can spot another hallway with doors running along either side. 
+<hr>
+[[Go through the doors|First Floor Double Doors]]
+\
+"Second Floor: Elevator Hall" 
+You step out into the hallway, the elevator doors sliding shut behind you. 
+
+...Except there's nothing here yet! Whoops!
+
+[[Elevator]]  <tw-passagedata pid="31" name="Elevator Hall Secret Lab" tags="" position="100,1300" size="100,100"> set $location to "Secret Lab: Elevator Hall" 
+You step out into the hallway, the elevator doors slamming shut behind you. 
+
+...Except there's nothing here yet! Whoops!
+
+"First Floor: Experimental Pokéball Lab" 
+
+The door opens to a dark room. Deep blankets of shadow cling to each wall, obscuring any possible path inside. The only visible light trickles down from the centre of the room - a flickering, failing bulb casting a dim beam to the floor. Under it sits some kind of table, and ion top of that rests a single pokéball.
+
+A shudder runs down your spine at the sight of it all. Something about this feels…wrong.
+
+ linkappend "Approach the pokéball" 
+	 replace "#rocketball"  
+    Swallowing your hesitation, you press on into the room, and the moment you leave the safety of the corridor the door slams shut behind you, casting you into a near impenetrable darkness. Your only guide is the overhead light, so you have no choice but to follow it into the room, approaching the solitary pokéball with light, trembling steps.
+
+You stop just short of the glass case and peer inside. Now that you’re closer, the design of the pokéball is much clearer: a deep, inky grey coats both sides of the plastic, with streaks of red coiling around the frame. Sitting just on top of the centre button lies a crimson ‘R’ in thick, bold lettering. Team Rocket sure aren’t subtle about their marketing…
+
+  "Touch the pokéball"  
+It’s cold to the touch… Unnaturally so. Like it had just been dipped in ice. You pick it up and hold it out in front of your chest, rolling it over in your hand. The red vines stretch all around it, forming a perfect circuit around the ball.
+
+  "Press the button"  
+Before your finger even fully depresses it, a jolt of energy surges up into your hand, zapping you for your trouble. You recoil with a gasp and the pokéball falls from your hand, clattering to the ground, the sound reverberating around the room. The moment it collides with the floor, a wide beam of fiery-red energy lashes out in a zigzagging streak and strikes you square in the chest, illuminating the room for all of a second before everything returns to shadow. 
+
+The bolt of energy leaves you feeling dizzy. Suddenly, everything’s heavy. Your limbs are shaky and feel like lead. A hot flush spreads out across your skin. Staggering backwards, you tug on your clothes. Was… Was it always this hot?
+
+  "Try to return to the door"  
+Your legs are shaking too much. You manage to take one step before they fail and you crumble down onto your knees. Beads of sweat roll off your forehead and splatter to the ground. Your breath falls hot, harsh and fast from your mouth and you plant your palms into the cold floor, barely able to keep yourself upright.
+
+W-What… What’s happening?
+
+That’s when you see it. There’s… There’s something on your hand—something pushing out of your skin. Your throat clenches as you stare at it, watching it start to spread up your arm and down onto your fingers. 
+
+
+Fur… It looks like fur! 
+
+Breath hot and heavy. Mouth agape. Mind spinning. The fur sprouts from your body in patches, crawling up your arms and onto your shoulders before splitting off into different colours: a light grey and a deep, inky black. They twist and mix, tendrils coursing down the surface of your skin, burning and itching and tingling. 
+
+You try to stagger to your feet, to get up and—and escape—but your muscles are like putty. Shaking. Aching. Too weak to move. Instead, you crumble back to the ground and succumb to the fire swallowing you, groaning as your body begins to twist and reform. Muscles tensing, bones creaking, a million ghostly fingers drumming into your skull. Heat swells from it, pulsing down onto your face. Bones pop and crack but there’s no pain.
+
+  "W-What’s… What’s happening…?"  
+There’s a pounding in your head.  C-Can’t… Can’t think. Can’t… Can’t… 
+
+The tingling spreads. Your skin itches, burning as the scales climb up and over your neck. It’s on your face, little pricks of horrible heat and pressure, spreading faster and faster and faster—
+
+  "Make it stop!"  
+You tear your hands from the ground, crashing onto your elbows, and reach for your face. Warm and coarse, covered in thick layers of fur. Pressure pools into the centre of it—right around your sinuses, and with a gasp your entire face stretches out into a sharp, canine snout. 
+
+Your eyes bulge. Your heart thunders. Shaking, you rake your hands across your new snout, tracing it right down to your wet and leathery nose. Then you see your hands—warped, enveloped in shaggy fur, dark, ivory claws in place of your nails. Your head throbs and your chest aches as your ears shift to the top of your head, becoming pointed and furry. Every sound becomes sharper just as every scent does.
+
+  "Y-You… W-What…?"  
+“M…Might… yena…?”
+
+W-Why… Why can’t you speak?
+
+Hunched over. Breath hot, haggard, unfocused. No rhythm. Catching in your throat. Fire lashes across your chest, and the thought is torn from your mind. There’s a sound of ripping fabric as your muscles bulk, swell and change, and within seconds your shirt and pants are hanging off you in ruined strips. Your feet bulge and ache, bursting out of your socks and shoes as canine paws, just like your hands. A trail of ice shoots down your spine as a thick, swishing tail bursts out from the base.
+
+And—and then more heat. Pooling beneath your stomach and swirling around your legs. You take a shuddering gasp as tendrils of heat coil around your cock and balls, pushing and prodding and squeezing. Within seconds your cock is swollen, the heat tapering, and it’s aching for attention. The heat wriggles back up your body and swirls around your head, rewiring every nerve directly to your cock.
+
+  "Touch it"  
+You can’t help yourself. You’re already rutting into the floor, desperate for any kind of friction but—but it’s not enough. With a snort and a groan you force yourself onto your back and stare skywards, eyes glassy and eye-lids drooping. You can see the tip of your snout above you, your nostrils flaring with every shaking breath.
+
+ F-Fuck… You’re so needy. 
+
+Ecstasy rips through you when you finally touch yourself. You fumble with your new paws, stroking your cock hard and fast, brain fogging with every second that passes. 
+
+F-Fuck… Fuck…!
+
+Moaning. Breathing hard. Every other part of you goes limp as your hand flies over your cock. Faster. Harder. Heart skipping, stopping, then pounding against your ribcage as—as you get closer. As the heat swells and rises and—and—
+
+Your body jerks, then goes stiff as you orgasm, painting your furry stomach with ropes of hot seed. The flow continues for what feels like hours, your cock aching and twitching needily, racking every inch of your body with a pleasant buzz. 
+
+You lie there breathless as the world spins around you, basking in how amazing everything feels. 
+
+//Click//
+
+You turn to your side, panting and eyes barely seeing. The dark black pokéball sits in the mess of your torn clothes, and leaning against it sits your own pokéball. Slowly, your thoughts begin to clear. Panic tries to worm through but your mind is still a swamp. 
+
+Maybe… Maybe $partner.name can help you? Find a way to change you back?
+
+  "Reach for the pokéball"  
+Still weak, your muscles ache as you push your arm out to the side. Your pokéball lays just out of reach, so you stretch, forcing your body to move. Paws outstretched, so close—
+
+A sudden wave of dizziness crashes into you. The world swerves. Your head aches. Your body fumbles and sways.
+
+You reach out, and your paw brushes against the button on the black pokéball instead. 
+
+A jolt of energy runs from it into your paw. Your eyes widen, panic fully gripping you now as the ball rattles against the floor.
+
+Wait wait wait—
+
+Then it explodes in a stream of red. It hits your body, covering you in a warm field. Your skin burns. Your heart races. Energy crackles around you, inside you.
+
+  "Call for help"  
+“Y-Yena! Yena yena—”
+
+And then with one, final scream, the beam of light pulls you into the pokéball. The world goes pitch black, chains lashing around your mind as it rocks back and forth. Once. Twice—
+
+Click.
+
+[[The pokéball locks shut, sealing you into your new, permanent home.|BAD END]]
+
+
+Scales… It looks like scales! 
+
+Breath hot and heavy. Mouth agape. Mind spinning. The scales force their way up your arms and crawl onto your shoulders, splitting off into different colours: a sandy brown, a deep black, and a vibrant pink. They twist and mix, tendrils coursing down the surface of your skin, burning and itching and tingling. 
+
+You try to stagger to your feet, to get up and—and escape—but your muscles are like putty. Shaking. Aching. Too weak to move. Instead, you crumble back to the ground and succumb to the fire swallowing you, groaning as your body begins to twist and reform. Muscles tensing, bones creaking, a million ghostly fingers drumming into your skull. Heat swells from it, pulsing down onto your face. Bones pop and crack but there’s no pain.
+
+  "W-What’s… What’s happening…?"  
+There’s a pounding in your head.  C-Can’t… Can’t think. Can’t… Can’t… 
+
+The tingling spreads. Your skin itches, burning as the scales climb up and over your neck. It’s on your face, little pricks of horrible heat and pressure, spreading faster and faster and faster—
+
+  "Make it stop!"  
+You tear your hands from the ground, crashing onto your elbows, and reach for your face. Scaly. The skin is smooth, yet rough like sand—but there’s something wrong. It’s moving. Changing. Pressure pools into the centre of it—right around your sinuses, and with a gasp your entire face stretches out into a sharp, jagged snout.
+
+Your eyes bulge. Your heart thunders. Shaking, you rake your hands across your new snout, tracing it right down to your lizard-like nostrils. Then you see your hands—warped, enveloped in scales, three thick, monstrous claws in place of your nails. Your head throbs and your chest aches.
+
+  "Y-You… W-What…?"  
+“K-Krok… rok?”
+
+W-Why can’t you speak?
+
+Hunched over. Breath hot, haggard, unfocused. No rhythm. Catching in your throat. Fire lashes across your chest, and the thought is torn from your mind. There’s a sound of ripping fabric as your muscles bulk, swell and change, and within seconds your shirt and pants are hanging off you in ruined strips. Your feet bulge and ache, bursting out of your socks and shoes—three-toed and clawed just like your hands. A trail of ice shoots down your spine as spikes burst painless from it, sweeping down your back and extending into your new, growing tail.
+
+And—and then more heat. Pooling beneath your stomach and swirling around your legs. You take a shuddering gasp as tendrils of heat coil around your cock and balls, pushing and prodding and squeezing. Within seconds your cock is swollen, the heat tapering, and it’s aching for attention. The heat wriggles back up your body and swirls around your head, rewiring every nerve directly to your cock.
+
+  "Touch it"  
+You can’t help yourself. You’re already rutting into the floor, desperate for any kind of friction but—but it’s not enough. With a snort and a groan you force yourself onto your back and stare skywards, eyes glassy and eye-lids drooping. You can see the tip of your snout above you, your nostrils flaring with every shaking breath.
+
+ F-Fuck… You’re so needy. 
+
+Ecstasy rips through you when you finally touch yourself. You fumble with your new, three-fingered hands, stroking your cock hard and fast, brain fogging with every second that passes. 
+
+F-Fuck… Fuck…!
+
+Moaning. Breathing hard. Every other part of you goes limp as your hand flies over your cock. Faster. Harder. Heart skipping, stopping, then pounding against your ribcage as—as you get closer. As the heat swells and rises and—and—
+
+Your body jerks, then goes stiff as you orgasm, painting your pink, scaly stomach with ropes of hot seed. The flow continues for what feels like hours, your cock aching and twitching needily, racking every inch of your body with a pleasant buzz. 
+
+You lie there breathless as the world spins around you, basking in how amazing everything feels. 
+
+//Click.//
+
+You turn to your side, panting and eyes barely seeing. The dark black pokéball sits in the mess of your torn clothes, and leaning against it sits your own pokéball. Slowly, your thoughts begin to clear. Panic tries to worm through but your mind is still a swamp. 
+
+Maybe… Maybe $partner.name can help you? Find a way to change you back?
+
+  "Reach for the pokéball"  
+Still weak, your muscles ache as you push your arm out to the side. Your pokéball lays just out of reach, so you stretch, forcing your body to move. Fingers outstretched, so close—
+
+A sudden wave of dizziness crashes into you. The world swerves. Your head aches. Your body fumbles and sways.
+
+You reach out, and your finger touches the button on the black pokéball instead. 
+
+A jolt of energy runs from it into your hand. Your eyes widen, panic fully gripping you now as the ball rattles against the floor.
+
+Wait wait wait—
+
+Then it explodes in a stream of red. It hits your body, covering you in a warm field. Your skin burns. Your heart races. Energy crackles around you, inside you.
+
+  "Call for help"  
+“K-Krok! Rok—Rok—”
+
+And then with one, final scream, the beam of light pulls you into the pokéball. The world goes pitch black, chains lashing around your mind as it rocks back and forth. Once. Twice—
+
+Click.
+
+[[The pokéball locks shut, sealing you into your new, permanent home.|BAD END]]
+
+ "First Floor: Main Hall" 
+You step into the long hallway, your eyes immediately drawn to the large number of rooms sprawling across it. Boxes and tables litter the floor around you, filled with stashes of pokéballs, poffins, stationary and more. Were these all stolen?
+
+It doesn't look like the boss's office is on this floor, but it might not be bad idea to keep exploring anyway. 
+\
+<hr>
+\
+[[Examine the doors|First Floor Doors Hub]]
+\
+You step deeper into the hallway, scanning each door in succession. Each of them has a blinking security box of a different colour attached to them, and none of them budge when you turn the handles. Looks like you'll need to find the right security card if you want to get in.
+
+On the side of each door there's a sign with messy scrawl on it - something to identify each room. Handy.
+\
+<hr>
+\
+[[Experimental Pokéball Lab|Rocket Ball Bad End]]
+\
+[[Aura Training Facility|Lucario Room]]
+\
+[[Staff Room|StaffR Incineroar Fight]]
+\
+[[Return to the elevator|Elevator Hall First Floor]]
+\
+Note: This game contains content not suitable for those under the age of 18. 
+
+This game contains a variety of kinks and themes that may not be suitable for all players. If you do not like a strong focus on HYPNOSIS, TRANSFORMATION, LATEX/RUBBER and NONCON/DUBCON then please be warned this game may not be for you.
+
+Also, this game will only contain GAY MALE sex scenes. 
+
+NOTE - This game may not work well on mobile devices. For the best experience please play it on a desktop browser.
+
+//Currently, there is no end to the game. This is work in progress project with a small collection of transformation scenes and some light puzzle solving. I plan to add more as time goes on.//
+
+[[Continue|Tips etc]]
+Welcome to my new Twine game!
+
+To progress through the game, please click the  linkappend "links."  
+
+Yep! Just like that. 
+
+Now, click the link below to begin!
+
+[[Start]]
+  <tw-passagedata pid="43" name="Gallery" tags="noreturn" position="1200,0" size="100,100"> set $gallery to true 
+ set $location to "Mystery Zone" 
+The world fizzles out. Inky darkness creeps into your mind, blurring your thoughts. Memories rush into you that you don't recognise, swirling around your head like a storm. Some of them are clear, others are muddy, clouded in mystery.
+
+You feel that... if you reach out and touch them... you can relive these moments...
+
+ link "Return to the present" $return  set $gallery to false  
+<hr>
+//You seem to recall these moments...//
+
+ switch $charmBadend 
+ case false 
+1. A computer, and scarlet red rubber...
+ case true 
+ link "1. Charmeleon Goo Transformation"  goto "Charmeleon TF (BAD END)"  /link  /switch 
+\
+ switch $ratBadend 
+ case false 
+2. A box, and inside it a shiny, purple suit...
+ case true 
+ link "2. Rattata Suit"  goto "Rattata Suit BAD END 1" 
+ /link  /switch 
+\
+ switch $rocketballBadend 
+ case false 
+3. A black pokéball, sealed in glass...
+ case true 
+ link "3. Rocket Ball Malfunction"  goto "Rocket Ball Bad End" 
+ /link  /switch 
+\
+ switch $lucarioBadend 
+ case false 
+4. A red keycard, and a room with a  strange aura... 
+ case true 
+ link "4. A red keycard, and a room with a strange aura..."  goto "Lucario Room BAD END 1" 
+ /link  /switch 
+\
+ switch $lycanrocBadend 
+ case false 
+5. A metal gate, an empty kennel, and a strange video...
+ case true 
+ link "5. A metal gate, an empty kennel, and a strange video..."  goto "Lycanroc TF" 
+ /link  /switch 
+\
+ switch $buizelBadend 
+ case false 
+6. A large room, filled with shiny, rubber pokéballs...
+ case true 
+ link "6. A large room, filled with shiny, rubber pokéballs..."  goto "Approach the large pokéball" 
+ /link  /switch 
+\
+ switch $easyBattleBadend 
+ case false 
+7. A battle lost, a weak enemy, and nowhere to run...
+ case true 
+ link "7. A battle lost, a weak enemy, and nowhere to run..."  goto "Easy Bad End 1" 
+ /link  /switch 
+\
+ switch $incineroarBadend1 
+ case false 
+8. A battle lost, trapped with a blazing hot foe...
+ case true 
+ link "8. A battle lost, pinned underfoot a blazing hot foe..."  goto "Incineroar Bad End 1"  ($incinCount / 2)
+There's a hastily scrawled note on the table. You pick it up and read it.
+<hr>
+//"Hey Brad! Welcome to your first day on the job! 
+
+So uh... kinda awkward, but I lost your entry card. Must have dropped it somewhere. Hopefully someone's on shift to let you in when you turn up and help show you around.
+
+If not, you're gonna have to go to the Training Room and grab a green card to get up to the first floor. There's uh... a little test before you can get it though. Good luck, the questions are super difficult! I almost didn't pass!
+
+Oh! Also, make sure you swing by the closet and grab yourself a uniform. There should be heaps of them lying around in there. Just uh... make sure you grab the right box. I think the last newbie left something there he shouldn't have.
+
+Your friend - 
+
+Rocket Grunt Bob
+
+P.S. Please don't get the question wrong. I need a friend..."//
+
+ return "Leave" 
+
+ You trek down the hallway and stop in front of the door. A forest of vines and leaves cover it from top to bottom, strangling it tight. Some of them shimmer like rubber in the light, whilst others creak and groan from age. You can't even pull at the handle like this. No way it'll open.
+
+Maybe you can get through here if you can find something to cut it with? 
+(Coming soon)
+<hr>
+[[Return to the Elevators|Elevator Hall Ground Floor]] <tw-passagedata pid="46" name="Secret Lab Elevator" tags="" position="700,500" size="100,100">It's old. Rust stains the metal doors and creeps around the frame. A large fence seals the door off from you, though there's just enough of a gap for you to squeeze your hands through it.
+
+The security box blinks a deep, eerie purple.  if not $hasPurplecard None of your cards will work on this. Maybe you can find one? (Coming soon) /if 
+<hr>
+[[Return to the elevator hall|Elevator Hall Ground Floor]] <tw-passagedata pid="47" name="Ground Floor Stairs" tags="" position="700,400" size="100,100">As you approach, you see a small line of black and yellow tape strapped across the entrance to the stairwell, alongside a metal barrier. Faint whispers emenate from the darkness, mixed with dark, howling cries and a gust of icy air.
+
+You could easily jump over the barrier and go downstairs... but that's too much effort.
+
+(Coming soon)
+<hr>
+[[Return to the elevator hall|Elevator Hall Ground Floor]]  <tw-passagedata pid="48" name="Rattatta Suit" tags="noreturn" position="500,800" size="100,100">The box seems to rumble as you lay your hands on it, only stopping once you pull the cardboard flaps open. Inside there's a bundle of shiny, purple material --  a mask and a body suit.
+
+It looks like...a Rattata? 
+<hr>
+[[Pick up the suit|Rattata Suit BAD END 1]]
+\   
+[[Leave it alone|Staff Closet]] <tw-passagedata pid="49" name="Rattata Suit BAD END 1" tags="noreturn" position="400,800" size="100,100">You pick up the suit, leaving the mask in the box for now. It’s ice cold to the touch, and squeaks softly as you run your fingers across the rubbery material. Holding it up to chest height, you can see a cream-coloured pattern that runs down the chest area and under the crotch piece. A zipper runs down the spine of the suit, already pulled open to reveal the dark purple interior. 
+
+The longer you stare at it, the more you want to try it on… Just for fun.
+<hr>
+[[Put it on|Rattata Suit BAD END 2]]
+\
+ if not $gallery [[Put it back down|Put it Down]] /if  <tw-passagedata pid="50" name="Put it Down" tags="noreturn" position="400,900" size="100,100">Frowning, you drop the suit back into the box with a scoff.
+
+This isn't even the top percentage of Rattatas...
+
+[[Continue|Staff Closet]] <tw-passagedata pid="51" name="Rattata Suit BAD END 2" tags="noreturn" position="300,800" size="100,100"> set $ratBadend to true 
+You rake your eyes across the suit for a few more seconds before finally deciding. Slinging it over the back of a nearby chair, you carefully strip down to your bare skin, leaving your clothes in a neat pile to the side, with $partner.name’s pokéball sitting right on top. Then, hands buzzing with excitement, you pick the Rattata suit back up and slip your left leg inside.
+
+Immediately, the cold latex inside sticks to your skin. A shudder runs up your spine and you hoist your other leg in, fumbling to push your feet into position. Once secured, you tug the suit upwards and plunge one arm after the other into the sleeves, before finally securing the suit’s collar around your neck and pulling the zip up as far as you can manage. 
+
+You take a moment to bask in the feeling of the suit against your skin: the chill of latex and the shiny, squeaky sound it makes when you rub your hand over it. Then you return to the box, searching for the mask, and frown.
+
+Instead of just one mask, there are two: both of them almost identical apart from the eyes. The one you’d seen earlier has normal Rattata eyes, whilst the other one has a weird visor over the eye-piece. Strange… Was it just hidden beneath the suit?
+
+[[Put on the normal mask]]
+[[Put on the visor mask]] <tw-passagedata pid="52" name="Put on the normal mask" tags="noreturn" position="200,800" size="100,100">No point in thinking too hard about it. You just have to choose one!
+
+You reach down, scoop up the normal looking mask and hold it to your face. The front-side is a fully sculpted Rattata head, complete with bright red eyes, whiskers and a cute, stubby snout, which has a hollow opening in the mouth. The back-side is hollow, and when you turn it around to examine it you pause and frown.
+
+A thick, phallic plug juts out from the mouth piece, and just above it two nasal tubes extend from the snout. A sudden, squirming feeling of regret dawns on you as you stare at it. What… is this costume supposed to be for?
+
+The mask rumbles excitedly in your hands, and before you can put it down two thick vines of latex erupt from either side and latch onto the collar of the suit. You stagger back with a gasp, eyes wide, mind racing and heart thumping.
+
+  "Push it away!"  
+You try, straining your muscles as hard until they burn, but it’s no use. The mask yanks itself towards you, gripping the sides of your neck like a vice, inching closer and closer until—
+
+SMACK
+
+It slams hard into your face, the plug and tubes immediately plunging into your mouth and nose. 
+
+  "Get it off!"  
+Groaning, you raise your hands and claw at it, trying and failing to tear it away from your skin. The mask holds tight, squirming and constricting against your head. More latex seeps around your skull, fusing with the suit and pulling tight against your body to create a seamless link. 
+
+“Mmfgph!”
+
+Your heart stops as the sound of a closing zipper rattles through your ears. Squirming, you reach around your back, only to find that the metal teeth are gone, replaced by smooth latex. You can feel the zipper sliding up your neck and onto your head, slowly sealing the suit and mask shut, and as it travels up the teeth behind it sink into the latex and disappear. 
+
+Panic squirms around your stomach. You fumble for the zipper only seconds too late. With a final, loud ZIP it yanks itself full closed and detaches from the suit, landing on the ground with a tiny ping. The teeth it leaves behind quickly sink into the rubber beneath your fingers, and your chest goes tight when it finally disappears completely. 
+
+  "No no no!"  
+“Mmfg! Mmmffo!” 
+
+Squirming. Breath heavy through your nose, the smell of rubber thick and everywhere. You grab at any part of the suit you can and pull, but there’s no give. No seam. No weakness. Desperate, you scan the room, looking for something to tear it off with, but there’s nothing.
+
+And then, moving on its own, the tail of the suit pushes against your backside. Just as it does, the cool rubber cupping your cock and balls buzzes, then begins vibrating. You freeze in place, mind spinning, a moan catching in your throat as the tail nudges up against the tight ring of nerves before plunging right in. 
+
+You crumble to your knees with a muffled moan. The tail enters you without resistance and begins pumping back and forth, rutting against your prostate. Your cock leaps in response, already half-hard thanks to the vibrations. Within seconds you’re fully erect, your cock aching with impossible, indescribable need, and it only gets worse when you reach down to grope it.
+
+ F-Fuck… Oh god… 
+
+Pleasure rockets through you. With a groan of defeat you collapse onto your back, leaning against the wall with your legs raised and hand pressed tight to your crotch. Skin on fire. Heart thundering. 
+
+  "Can’t stop touching!"  
+The more you touch, the better it feels. You climb closer and closer to orgasm but never reach it - it always fades just inches before it. You let out a muffled cry and stroke harder, the sound of latex against latex filling the room, but the suit always stops you just at the cusp. Just when your legs begin to shake and your cock aches for release. 
+
+“Mmff!” F-Fuck! “Mmfgh!” S-So… So close!
+
+  "J-Just a little more!"  
+  "M-More!"  
+
+It goes on for what feels like hours. Tremors run across your skin. You’re shaking, hot, barely able to think. All you can do is…is keep touching. Keep touching because…because it feels so good.
+
+N-Need… Need to come…!
+
+The door slides open with a hiss and a figure enters, clad entirely in Team Rocket clothing. He approaches you with a smirk, a glint of malice in his eyes, and kneels down in front of you. There’s a tight snap as he secures a rubber collar to your neck, fixed with a long, fabric leash that he winds around his hand.
+
+When he stands, there’s a firm tent in his pants.
+
+“Naughty little Rattata,” he murmurs, voice thick with lust. He yanks you to your feet by the leash, twists you around and grapples you from behind. His arms slide beneath yours, one hand firmly grabbing your cock, whilst the other comes up to smother the snout of the mask.
+
+“This is never coming off…” he says in a purr, right in your ear. “You’re ours now. //Forever.//”
+
+ linkappend "F-Forever?"  
+
+He forces a finger into the mouth of the mask and jams it against your tongue, and for a long, horrible moment you’re stuck in place, groped and toyed relentlessly. His grip changes from featherlight to firm in an instant, tormenting your bulging cock to the point you feel pre dribbling down it.
+
+And then he shoves you forward, yanks on the leash, and drags you squirming and groaning out of the room, your cock still aching and bulging out against the suit. Every little movement sends a ripple of pleasure down it that you can’t stop. Your body a furnace and your mind a hurricane.
+
+[[You belong to Team Rocket... Forever.|BAD END]]
+
+No point in thinking too hard about it. You just have to choose one!
+
+You reach down, scoop up the visor mask and hold it to your face. The front-side is a fully sculpted Rattata head, though in place of the eyes is a glossy black visor. Beneath it rests the whiskers and a cute, stubby snout, which has a hollow opening in the mouth. The back-side is hollow, and when you turn it around to examine it you pause and frown.
+
+A thick, phallic plug juts out from the mouth piece, and just above it two nasal tubes extend from the snout. A sudden, squirming feeling of regret dawns on you as you stare at it. What… is this costume supposed to be for?
+
+The mask rumbles excitedly in your hands, and before you can put it down two thick vines of latex erupt from either side and latch onto the collar of the suit. You stagger back with a gasp, eyes wide, mind racing and heart thumping.
+
+  "Push it away!"  
+You try, straining your muscles as hard until they burn, but it’s no use. The mask yanks itself towards you, gripping the sides of your neck like a vice, inching closer and closer until—
+
+SMACK
+
+It slams hard into your face, the plug and tubes immediately plunging into your mouth and nose. The visor presses flush to your eyes, casting you into the darkness.
+
+  "Get it off!"  
+Groaning, you raise your hands and claw at it, trying and failing to tear it away from your skin. The mask holds tight, squirming and constricting against your head. More latex seeps around your skull, fusing with the suit and pulling tight against your body to create a seamless link. 
+
+“Mmfgph!”
+
+Your heart stops as the sound of a closing zipper rings through your ears. Squirming, you reach around your back, only to find that the metal teeth are gone, replaced by smooth latex. You can feel the zipper sliding up your neck and onto your head, slowly sealing the suit and mask shut, and as it travels up the teeth behind it sink into the latex and disappear. 
+
+Panic squirms around your stomach. You fumble for the zipper only seconds too late. With a final, loud ZIP it yanks itself full closed and detaches from the suit, landing on the ground with a tiny ping. The teeth it leaves behind quickly sink into the rubber beneath your fingers, and your chest goes tight when it finally disappears completely. 
+
+  "No no no!"  
+“Mmfg! Mmmffo!” 
+
+Squirming. Breath heavy through your nose, the smell of rubber thick and everywhere. You grab at any part of the suit you can and pull, but there’s no give. No seam. No weakness. Desperate, you scan the room, looking for something to tear it off with, but there’s nothing.
+
+And then, moving on its own, the tail of the suit pushes against your backside. Just as it does, the cool rubber cupping your cock and balls buzzes, then begins vibrating. You freeze in place, mind spinning, a moan catching in your throat as the tail nudges up against the tight ring of nerves before plunging right in. 
+
+With a muffled cry, you collapse to your knees. The tail enters you without resistance and begins pumping back and forth, rutting against your prostate. Your cock leaps in response, already half-hard thanks to the vibrations. Within seconds you’re fully erect, your cock aching with impossible, indescribable need, and it only gets worse when you reach down to grope it.
+
+ F-Fuck… Oh god… 
+
+Pleasure rockets through you. With a groan of defeat you collapse onto your back, leaning against the wall with your legs raised and hand pressed tight to your crotch. Skin on fire. Heart thundering. 
+
+  "Can’t stop touching!"  
+The more you touch, the better it feels. You climb closer and closer to orgasm but never reach it - it always fades just inches before it. You let out a muffled cry and stroke harder, the sound of latex against latex filling the room, but the suit always stops you just at the cusp. Just when your legs begin to shake and your cock aches for release. 
+
+“Mmff!” F-Fuck! “Mmfgh!” S-So… So close!
+
+  "J-Just a little more!"  
+  "M-More!"  
+You squirm. Writhe. Groan and moan, but you can’t come. Can’t escape. Can’t tear the suit off of you. As you climb to your next orgasm, the screen inside the suit flickers to life, burning with a bright, spiralling pattern.
+
+//’’Obey.’’//
+
+A shudder runs down your spine. You go stiff, eyes bulging, fixed on the pulsing twisting colours.
+
+//’’You will be a good drone. You will be a good toy.’’//
+
+S-Something in your head. You groan, try to shut it out, but it sticks to your mind, a whisper in your ears.
+
+//’’Obey Team Rocket. Be a good drone.’’//
+
+ linkappend "Y-You…"   
+ Obey? 
+
+C-Can’t…  Can’t… think… 
+
+W-Why… What…?
+
+//Obey.//
+
+O…Obey…?
+
+//’You are a good toy.//
+
+Y-You… You’re a good…  a good toy? 
+
+An intense heat swarms your cock, and every nerve in your body lights up in delight. The spirals pulse brighter and brighter, consuming your mind.
+
+//Obey. Be a good toy. Good drone. You belong to Team Rocket.//
+
+Y-You…
+
+  "N-No... No... You don't..."  
+ You belong to Team Rocket. 
+
+  "You belong… to Team Rocket?"  
+The world disappears, your mind sinking into a thick, endless void. Pleasure rattles your body and courses through your mind, the only thought in your head repeating thick and clear as you're dragged out of the room. 
+
+//You are a good toy.//
+
+The thought makes your cock ache. Makes your entire body burn with need. 
+
+//You are a good toy.//
+
+//You are a good toy.//
+
+//You are a good toy.//
+
+Movement. Hands on your head, guiding you, pressing your snout against something warm and musky. You groan, taking in the scent, and again as the heat plunges into your mouth. A thick, warm cock fills you, and the taste makes your own aching need twitch.
+
+//Obey.//
+
+//Suck.//
+
+The spiral burns as you obey. As you suck. As you serve. The voice spins around your empty mind in a never ending loop.
+
+Good boy. Good drone. Good toy.
+
+[[You belong to Team Rocket… Forever.|BAD END]]
+
+  <tw-passagedata pid="54" name="Untitled Passage 1" tags="forest" position="1600,0" size="100,100"> link "yes"  addclass "body" "hypno"  /link  <tw-passagedata pid="55" name="title" tags="" position="0,100" size="100,100"><img src="images/rocket_lair_cover.png">
+<h1>Team Rocket's Lair</h1>
+<h2>Twine game by SqueakyOrca. Please do not repost.</h2>
+
+
+ return "back"  <tw-passagedata pid="57" name="Lucario Room" tags="" position="1600,800" size="100,100"> set $location to "First Floor: Aura Training Facility" 
+\
+You enter into a small room, devoid of any colour. There's a dividing wall running down the centre, and attached to it are a pair of desks and appropriate office chairs. Above the desk and running flush with the wall, is a long window leading into the other room. 
+
+ if hasVisited("Note") There's a door leading into the other room, with a large blue button on the side. Above it rests a sign that reads 'No pokéballs allowed. Max one human.' /if 
+
+There's a note on the desk with familiar, untidy scrawl all over it.
+<hr>
+[[Note]]
+\
+ if hasVisited("Note") [[Aura Chamber|Aura Chamber Door]] /if 
+\
+[[Leave the room|First Floor Doors Hub]] <tw-passagedata pid="58" name="Note" tags="noreturn" position="1600,900" size="100,100">You pick up the note, squinting at the untidy handwriting:
+<hr>
+//"Hey Brad! Or uh... I guess whoever find this message.
+
+If you are Brad, then that means you made it past the test! Welcome to Team Rocket! Hopefully someone was able to show you around. 
+
+If not... well, that's why I'm leaving these notes for you!
+
+So uh... I was meant to meet up with you and give you the other security cards, but like I said I kinda lost them somewhere. Don't worry though! Someone left a spare card in the Aura Chamber, so you could probably just uh,,, borrow it, I guess. They won't mind. 
+
+I'd go in and grab it myself but uh... the Lucario in there are kinda looking at me weird. They got this strange stare they do, y'know? I think they're looking into my soul.
+
+It's funny, actually - last time I came in here there was only one Lucario. Dunno when we ended up getting five of them. Especially since we just had four employees take long-term leave. I didn't think we had the manpower to get more Lucario.
+
+I'm sure it's uh... nothing weird. 
+
+Anyway, rambling. You can get into the Aura Chamber by pressing the button on the side of the door - but it won't let you take any pokéballs in, and only one person's allowed in at a time. Security stuff in case someone tries to steal a Pokémon.
+
+Your friend
+
+Rocket Grunt Bob
+
+P.S. - Dogs scare me..."//
+
+ return "Stop reading" 
+
+A mechanical voice rings out above you when you press the button. 
+
+"Please deposit any pokéballs onto the desk."
+
+The door whirrs, but doesn't open. Looks like you're going to have to comply if you want to get in. 
+<span id="door">
+ linkappend "Leave your pokéball on the desk."  
+ replace "#door"  
+
+	A twinge of guilt hits you as you unhook $partner.name's ball from your belt and place it on the desk, but right now you don't have a choice. 
+    
+    Seemingly satisfied, the door ahead of you slides open.
+    
+    [[Enter|Aura Chamber]]
+     /replace 
+     
+    
+    [[Step away from the door|Lucario Room]]
+      <tw-passagedata pid="60" name="Aura Chamber" tags="noreturn" position="1800,800" size="100,100"> set $location to "First Floor: Aura Chamber" 
+<span id="keycard">\
+You step into the room, heart thundering as the door crashes shut behind you. Every head in the room turns to face you, their piercing red eyes fixed on even your slightest movement. A horrible weight presses into your ears and swirls around you - like the fabric of reality is warping.
+
+Frozen. Shaking. Chest tight. Seconds pass but nothing happens, and it takes you a few more seconds to regain your composure. All you have to do is grab the keycard and leave. It’s sitting there on the bench just across from you. Just… Just go straight for it, and then get out of there.
+
+  "Approach the keycard"  
+The desk is cluttered with stained coffee mugs and stationary, but the card is easy to spot, light reflecting off the shiny red plastic.
+
+You should grab it and get out of here… But you could also investigate a little more?
+<hr>
+[[Investigate|Lucario Room BAD END 1]]
+\
+ linkappend "Grab the keycard and leave!"  
+ set $hasRedcard to true 
+ replace "#keycard"  
+You snatch up the red keycard and hightail it back to the door, slamming the button until the metal door slides open to let you out. 
+
+The Lucario are staring at you through the window when you turn back to them. It’s almost like they’re trying to tell you something. Like… they want you to come back inside?
+
+Not that it matters. Now you’ve got a new keycard, and there are new areas to explore. You scoop up your $partner.name's pokeball from the desk and ready yourself to continue.
+
+You came across some locked doors earlier. Maybe you can get through some of them now?
+
+[[Continue|Lucario Room]] 
+\
+ /replace 
+ 
+ 
+  <tw-passagedata pid="61" name="Lucario Room BAD END 1" tags="noreturn" position="1900,800" size="100,100"> set $lucarioBadend to true 
+The room seems to swerve. You stagger, losing your footing for a short second, clutching your forehead tenderly as you wait for the feeling to pass. It’s… it’s like a heavy blanket on top of you, rolling over your skull. The air feels heavier, hotter.
+
+And then… it’s gone.
+
+Ignoring the very sensible voice screaming at you in your head, you decide to investigate a bit more. The desk is a cold, harsh metal, smooth as you glide your fingers across the surface, and you only stop once you reach the edge of it. Beneath the desk sits a little drawer, the door hanging half open.
+
+  "Open the drawer"  
+You yank the drawer open and rummage around inside, though the contents are pretty barren. Four plastic cards, each with a picture and name proudly displayed on the front. Staff ID cards for Team Rocket? What are they doing in here?
+
+…
+
+Wait…
+
+  "Four?"  
+A nice, pointy rock settles in your throat. Four… Four cards… Four extra Lucario…
+
+Four members of staff on 'leave'?
+
+Knees shaking, you somehow force yourself to stand, every hair on your body standing on edge. You… You should probably get out of here.
+
+You take a step away from the table and turn—right into the path of one of the Lucario.
+
+You freeze with a gasp, eyes bulging and alert. Every inch of your brain is screaming at you to run, but your body won’t listen. The Lucario’s crimson eyes bore into your own, the sharp red accompanied by an ethereal, blue glow.
+
+And then… he steps //forward.//
+
+He pushes into your personal space, and in response you back up, wincing as you smack into the desk. Even then It’s not enough—the Lucario shoves into you, pressing his chest to yours and forcing you to lean all the way back until your head grazes against the wall. He follows, leaning in until his face is just inches from yours.
+
+A long moment passes where you just stare at each other, his breath warm and gentle on your face whilst yours is harsh and quick through your nose. The other Lucario have gathered around you in a ring, blocking you off from each and every side. Your brain spins for a solution—but without your $partner.name you’re completely defenceless. 
+
+The Lucario raises his paws, and the world goes ice cold as he presses them to the sides of your head. Your breath catches in your throat. Shaking. Eyes wide. Mind spinning.
+
+  "Push him away"  
+You… You can’t move. Everything’s gone numb. Your arms are bricks and your legs like putty. A line of ice shoots down your spine and you gasp again as the Lucario presses harder, a light blue glow washing over your peripheral vision. 
+
+ //Obey.// 
+
+A voice, knife-sharp and hot, pierces through your mind, and for all of a second every other thought vanishes. A jolt of fear rushes through you when they return, your body swaying, breath shuddering. 
+
+W-What…?
+
+ //Obey me.// 
+
+Again. Sharper. Louder. A deep, purring tone emanating from everywhere and nowhere. This time it bounces around your mind and clings to your brain like gum. A little whimper escapes you, and at the same time the Lucario holding you smirks. 
+
+ //You will be mine.// 
+
+Heat pours into your skull and spreads across your head, thick and swampy and impenetrable. You take a shuddering breath, eyes wide and head throbbing. S-Something… Something’s wrong. You… You need to fight. Need to get away!
+
+ //Relax.// 
+
+  "N-No…!"  
+The moment you try to resist it, the sensation doubles in strength, and the Lucario’s eyes light up a deep, tranquil blue. 
+
+ //Give yourself to me,//  comes the voice again. Louder. Demanding.  //You belong here. You belong with us.// 
+
+Y-You… You…  belong? 
+
+There’s… There’s something in your head. Like… like hands. Invisible hands tugging and pulling at your thoughts. Spirals of heat lash down your body. Your skin burns. You…  W-Why… 
+
+A little confused groan escapes you as the Lucario presses in one last time, bumping your noses together and enveloping your world with his eyes.
+
+ //Surrender. Become mine.// 
+
+  "Become… his…?"  
+A shudder of pleasure rolls through you at the thought, and the hands in your head double. Twisting and picking and tearing through your mind. The burning on your skin intensifies. More heat. You’re shaking. Eyes reflecting that ghostly blue.
+
+Y…you?
+
+A tingling sensation erupts over your body. Skin burning, muscles twitching, bones aching. Fire washes down your face as black and blue fur sprouts from it, blossoming in patches and quickly spreading. Down your forehead, snaking over the bridge of your nose as it begins to push and stretch out, the skin turning black, wet and leathery.
+
+ //You are not a human.// 
+
+Your breath catches in your throat. Eyes bulging—lost in the twisting, dancing blue glow. The other Lucario step in and press their hands to your body, and with a pulse of energy your clothes begin to burn away under a mystical blue flame. The fur rushes down to cover the bare skin, crawling excitedly over your exposed body.
+
+N…Not… human?
+
+You’re being pulled away from the wall, led into the centre of the room, warm bodies pressing in on all sides. Fur against skin… Then fur against fur. Hot, purring breaths in your ear. Hands touching you. Molding you. Changing you. Memories flash through your mind, all them slowly twisted and warped. Human faces. You… You should know them…?
+
+W-Who…  Who are they? 
+
+You try but… but you can’t remember. 
+
+The fire rages on, coating your body in fur. It turns bright as it ripples down your chest and coats your stomach, then shifts back to that brilliant blue as it reaches your legs. There’s a pleasant ache in your muscles as they swell—as your body reshapes. 
+
+ //You are one of us.// 
+
+Your legs buckle and the Lucario guide you down onto your knees, still swarmed around you, their bodies tightly pressed together. You fall to crotch level with the main Lucario, and there’s an intense heat billowing from his body with every passing second. You stare transfixed as his cock swells before your eyes—a deep crimson red, complete with a knot at the base. The thick, cloying scent of need makes your canine nose twitch, and pleasure rushes into your core. 
+
+ //Lean in.// 
+
+A paw falls on your head, but doesn’t push. It’s warm. Comforting. Makes your head throb with wonderful heat. Breath hard. Fast. Hot.
+
+Y-You…
+
+  "Lean in."  
+It feels so, so good when you obey, when you learn forward and press your nose against the the Lucario’s cock. A rush of ecstasy sweeps through you the moment you do, growing stronger and stronger when… when you inhale his scent. Every nerve in your body explodes in delight, and your own cock quickly swells to attention. 
+
+ //Worship us.// 
+
+The paw on your head moves, gently scratching your changing ears as they settle atop your head: coated in fur and transformed to a sharp point. Before you even know what you’re doing, your flat, rough, canine tongue drops out of your mouth and drags itself up the length of Lucario’s shaft, flooding your mouth with his taste. Something tingles in your stomach and a torrent of dizziness washes over you.
+
+ //Good boy.// 
+
+G-Good boy?
+
+ //Good boy.// 
+
+More heat. More pleasure. You’re trembling, heart thundering, breath shuddering, eyes dull and glassy. You take another lick, another taste, and a thousand explosions ripple out through your mind. 
+
+ Y-You… You…? 
+
+Hot. Aching for attention. You whimper as your cock throbs between your legs, as another Lucario pulls your legs back and positions you on all fours. A thick, fluffy tail erupts from your spine as they move you around, burning away the remaining human skin with layers and layers of fur. 
+
+ //You’re ours, now.// 
+
+Paws at your tail, pulling it aside, then heat. Hot and thick pressing at you, teasing around the tight ring of nerves. You let out a little groan as you’re guided closer, as a paw pulls your head up and positions your snout over the main Lucario’s cock, another pushing it against your lips.
+
+ //Just a taste…//  comes the voice.  //Seal your fate.// 
+
+  "Suck his cock"  
+There’s not even a question in your mind anymore. You let the cock plunge into your mouth, moaning at the delicious taste that floods your senses. At the same time, another cock pushes into you from behind, filling you right to the top of the knot. No pain. No discomfort. It… It fits so easily. So perfectly. 
+
+Like.. Like it belongs… Like you were made for this.
+
+ //That’s right. You ARE made for this.// 
+
+They fuck you from both sides, easing into a hard rhythm that your body quickly adjusts to. Sucking and—and squeezing around them. Cock aching. Mind spinning. Stars twist and blink across your eyes, your mind fading and slipping away. 
+
+ //Good boy. Good boy. Good boy.// 
+
+Good…  Good boy. 
+
+More cocks press against your face, the Lucario nudging them into your snout until you finally give in. You raise your hands, fumbling as your fingers fuse and twist into canine paws, and grab as many cocks as you can manage. Rubbing. Stroking. Working. Worshipping them.
+
+ Goodboygoodboygoodboygoodboy. 
+
+Snarling. Groaning. Shaking. The cocks inside your move faster. Fuck you harder. The grip on your head tightens: the Lucario above you is panting, eye lids drooping, snourt wrinkled in delight. Your eyes bulge as the cock inside you pushes even deeper—spreading you open inch by inch. Faster and harder and faster until—
+
+Pleasure explodes through your mind as the entire knot pushes into place, sealing itself inside you with a slick pop. Then comes the snarling, the moaning, the howling as you’re filled on both ends. Thick, ropey need splashes down your throat, hot and salty and—- and delicious.
+
+F-Fuck… Fuckfuckfuckfuck!
+
+A roar of delight tears through you as you gulp it all down, your cock spasming and leaking onto the floor. Your orgasm saps your arms of all strength and you slump forward, releasing the aching cocks and collapsing, snout pressed firmly into your Master’s musky sack. 
+
+Good… Good boy. Good boy.
+
+Everything buzzing. Tingling. It feels impossibly good to just lay like this, face first in your Master’s need. Like… Like you never want to leave. 
+
+  "N-Never…"  
+You… You feel like you had something to do. Something important.
+
+But… But you can’t… Can’t remember…
+
+C-Can’t…  think… 
+
+Never… Never want to leave.
+
+ //That’s right.// 
+
+A paw on your head, then another, lifting you up so that you’re facing your Master. He’s smiling down at you, eyes soft and warm and pulsing blue. It feels amazing every time he touches you. Every time he speaks to you. Every time he looks at you. 
+
+ //You’re mine. All mine, now.// 
+
+ link "Forever"  goto "BAD END"  
+
+"The Kennels" 
+The path beyond the gate stretches far around the side of the building. You follow it slowly, keeping your eyes peeled for any sign of danger, but the night air is mercifully still. 
+
+That is, until you round the corner.
+
+You come to a grinding halt at the sight of a large, open garden area, and scattered around it are dog kennels of different colours. Each of them houses a single Pokémon to correspond to the colours: Manetric in the yellow kennels, Mightyena in the black ones, Arcanine in the red ones... You've never seen so many dog Pokémon in one place!
+
+Just past the kennels, there's a little extension of the main building, the door slightly ajar. 
+<hr>
+[[Examine the Kennels]]
+[[Enter the building]]
+Moving carefully, you pad your way down the path and through the mess of kennels, eyes darting back and forth between them. Most of the Pokemon seem to be sleeping, though a few eye you warily as you walk. Are they guard dogs? Why are there so many of them?
+
+Strangely, one of the kennels at the end seems to be empty. Did one of the dogs run away? Maybe it's just out for a walk?
+<hr>
+ return "Go back" 
+
+"The Kennels: Control Room" 
+You poke your head through the door, searching for any kind of security, and fully step into the room once you've confirmed it's empty.
+
+The room is small, and the walls a dim, dark gray. In the centre, pressed against the back wall, is a computer desk and a set of monitors. There's a cabinet beneath the desk, and several shelves lines with different dog Pokémon equipment and food running across the adjacent wall on the left. Was this some kind of control room for the kennels? 
+
+There's a large black door directly opposite you, just next to the computer desk.
+<hr>
+[[Approach the desk]]
+\
+[[Try the door]]
+\
+[[Examine the shelves]]
+\
+You roll the office chair away and stand at the desk, wiggling the mouse gently until the computer flashes back to life. A list of options pop into view on the window, waiting to be clicked.
+<hr>
+[["Good Boy" Obedience Training]]
+\
+[[E-Mails]]
+\
+[[Go back|Enter the building]]  <tw-passagedata pid="66" name="Try the door" tags="" position="550,1300" size="100,100"> switch $hasDoorkey 
+ case false 
+The door is large and cold to the touch. Solid black metal. You try to open it, but it just rattles uselessly on the hinges. Looks like you'll need a key. (Coming soon)
+
+[[Go back|Enter the building]] 
+[[Peek through the keyhole]]
+ case true 
+You insert the black key into the lock and turn. There's a loud, metallic chunking sound, and then when you press down on the handle the door creaks open.
+
+[[Enter|Kennels Bondage Room]]
+ /switch  <tw-passagedata pid="67" name="Examine the shelves" tags="noreturn" position="400,1200" size="100,100">Rows upon rows of dog-related items stack the shelves, including collars, leashes, toys, muzzles, and even some Pokemon food.
+
+ return "Back"  <tw-passagedata pid="68" name="&quot;Good Boy&quot; Obedience Training" tags="noreturn" position="450,1400" size="100,100">Frowning, you click on the link and the entire screen flashes once, before maximising into a large black void. A dark red 'play' button appears in the centre, and beneath it a line of text that reads:
+
+'This video will help keep your canine Pokémon well trained! Please wear headphones for the best results.'
+
+Guess that's what the headphones are for... But can dogs even wear headphones?
+<hr>
+[[Play the video|Lycanroc TF]]
+\
+[[Exit|Approach the desk]] <tw-passagedata pid="69" name="E-Mails" tags="noreturn" position="550,1400" size="100,100">Another window opens up, the logo on top reading 'RocketMail' in large, red letters. There's only one unread e-mail, and it opens automatically once the page finishes loading.
+<hr>
+//"Hi there Jacob
+
+Sorry to bother you, I'd come down in person but your office doesn't agree with me.
+
+So you know the last time I was covering your shift? I found the key to that big door in my pants last night. I must have taken it home by mistake haha
+
+I'm working on the second floor at the moment, so come grab it sometime you're free. I got a new guy starting soon and the boss wants me to do the onboarding for him...
+
+Thanks,
+
+Rocket Grunt Bob
+
+P.S. IDK if you even read these e-mails..."//
+
+ return "Close the e-mail"  <tw-passagedata pid="70" name="Lycanroc TF" tags="noreturn" position="450,1500" size="100,100"> set $lycanrocBadend to true 
+Not thinking too hard on it, you fit the headphones snug to your ears and click the play button. The dim screen slowly fades into a cascade of colours and words, and the headphones purr to life with a low hum.
+
+  "Be a good dog."  
+  "Be a good boy."  
+ linkappend "Who's a good boy?"  
+
+The text cycles across the screen, melting into the pulsing light. You frown. How would this kind of training help a Pokémon?
+
+  "Be a good dog."  
+  "Be a good boy."  
+ linkappend "Who's a good boy?"  
+
+The text comes again, this time quicker and larger, the lights swirling around behind it. A tingling heat spreads across your skull as you stare, followed by pressure behind your eyes.
+
+You... uh...?
+
+  "Be a good dog."  
+  "Be a good boy."  
+ linkappend "Who's a good boy?"  
+
+The low purr from the headphones drowns out the world around you, and all the while that heat is spreading down into your face. The colours swirl and dance as they envelop everything, pouring into your mind and washing over your brain.
+
+  "You... You should stop..."  
+You try to move your arms, but they don't budge. Trails of heat coil down them, turning them to lead. Your breath shudders, eyelids drooping, the headphones like bricks against your ears.
+
+ Y-You... 
+
+  "Be a good dog."  
+  "Be a good boy."  
+ linkappend "Who's a good boy?"  
+
+G-Good... boy?
+
+Heat in your chest, squeezing around your stomach and leaking into your legs. You take another shuddering breath, a cold shudder raking down your skin when it catches in your throat. S-Something... Something's wrong...
+
+  "Take the headphones off."  
+C'Can't... Can't move... Everything feels so  heavy. 
+
+  "Be a good dog."  
+  "Be a good boy."  
+ linkappend "Who's a good boy?"  
+
+Another shudder as the heat curls around your thighs and plunges between your legs. You groan, squirming in place as your cock begins swelling. W-What... What's happening?
+
+  "Look away from the screen!"  
+  "You can't look away"  
+ linkappend "Good boys obey. Good boys keep staring."  
+
+G-Good... Good boys...?
+
+ Y-You? 
+
+  "Be a good dog."  
+  "Be a good boy."  
+ linkappend "Who's a good boy?"  
+
+ linkappend "You're a good boy...?"  
+
+Pleasure slams through you at the thought, and a little whimper escapes your throat as your cock throbs and aches, tenting in your pants. Y-You... G-Good...?
+
+  "You're good dog."  
+  "You're a good boy."  
+ linkappend "Who's a good boy?"  
+
+[["You're a good boy..."|Lycanroc TF 2]]
+\
+
+ <tw-passagedata pid="71" name="Lycanroc TF 2" tags="noreturn" position="550,1500" size="100,100">Shaking. Trembling. Whining as pleasure courses through every part of you. Everything feels hot. Burning. Cock aching. Skin tingling. 
+
+ C-Can't... C-Can't think...
+
+Can't look away... 
+
+Panting. Shaking. T-Too... Too hot... You... Everything... Too hot. You fumble clumsily at your shirt but can't grip it. Your hands burn, muscles aching pleasantly as more and more heat rolls across them. S-Something... Something...
+
+And then more heat. A body behind yours, a pair of arms slipping under your own, breath washing down your back, then sweeping up to your ear. One of the headphones lifts away momentarily, and a deep, masculine voice trickles in.
+
+"Who's a good boy?"
+
+The question makes your body erupt with need. Your cock aches and your heart skips excitedly, but you just keep staring. K-Keep... Keep staring...
+
+  "Be a good dog."  
+  "Be a good boy."  
+ linkappend "Who's a good boy?"  
+
+Y-You... You're a good boy...?
+
+The man holding you chuckles, and you gasp as one of his hands pushes down your body, stroking over the tenting bulge in your pants. He gives it a firm squeeze, then lets his fingers glide feather-light across it.
+
+"This video is meant for dogs, you know?" he purrs. "Do you want to be a good dog, hm? Do you want to be a good boy for me?"
+
+D-Dog... 
+
+You... You're a dog?
+
+[[N-No... No... I'm a human...]]
+ 
+ 
+ 
+Something squirms in your gut. Horror. Panic. Confusion. The words leave your mouth slowly, almost uncertain.
+
+The man just chuckles.
+
+"Are you sure?" he murmurs. "Don't you just feel so hot? Doesn't everything just feel so uncomfortable?"
+
+Still shaking. Still panting. Y-Yeah... T-Too... Too hot. Why is it so hot?
+
+Another chuckle. The man's hand slips away from your cock and peels your shirt up, before sliding onto your stomach.
+
+"Feel that?"
+
+It takes you a moment to process it, your mind still too fixated on the screen to care about anything else. But then you feel it - you feel the warmth of his hand presses against you, of his skin...
+
+...Skin against //fur.//
+
+You gasp. Shudder. Whine. Whimper. The man peels the rest of your shirt up, revealing your changing torso - patches of light brown fuzz spreading and swallowing up your skin. Every part the man touches feels //amazing.// And--And when he strokes across your stomach fireworks go off inside you. 
+
+[[W...What's...?|Lycanroc TF 3]]
+
+The world spins as the man pulls you away from the computer, your legs wobbling unsteadily as more and more heat rushes down them. There's a woosh of air as he lifts the headphones from your ears and discards them, but your mind is still buzzing with static.
+
+"Stay," he says, right in your ear, and your body goes stiff as rock as the urge to obey shoots through your brain. He leaves you for just a second before returning, and there's a chill as he secures something thick and leathery around your neck. It bites into your skin when he fastens it, and when he tugs on it your brain just melts.
+
+"Good boy..."
+
+Then he's groping, pulling away the tattered remains of your clothing. Your eyes fall to your body, glassy and distant, watching him uncover more and more fur. With every new patch of fur comes another shudder. In your arms. In your legs. In your face. Aching and itching and burning and--
+
+ F-Feels... Feels good... 
+
+Your legs finally give out. The man doesn't catch you, just lets you crumble onto your back as your body twists and changes. Fingers and toes fusing, legs and arms warping as fur spirals around them. Your face aches, nose turning black and leathery before stretching into a snout. A low growl rips through your throat as your mouth reforms into a maw and your ears shift into furry points.
+
+And all the while, your brain is on //fire.//
+
+"Who's a good boy?" the man says - leering over you, eyes dark with malice. 
+
+Pressure bursts through your skull. You're panting, rough, flat tongue hanging over loose. 
+
+  "N-No... N-Not..."  
+  "N-Not...?"  
+ linkappend "G-Good boy?"  
+
+Delight ripples through your cock. It aches, burning and swelling even more until it becomes tapered at the tip. Pressure builds in the base as a sheathe forms beneath it, and thick, scarlet knot forms in the flesh.
+
+Y-You... G-Good?
+
+ G-Good boy? 
+
+"Good boy..."
+
+G-Good...  Good boy... 
+
+  "B-But..."  
+  "H-Human...?"  
+ linkappend "N-Not... Not a dog..."  
+
+A thick, fluffy tail erupts from your spine, piling more and more pleasure into your lust-soaked brain. Everything spins. The colours still pulse and swirl around your mind, corrupting every inch of you. 
+
+  "Be a good dog."  
+ linkappend "Y-you... Good...dog?"  
+  "Be a good boy."  
+ linkappend "Good... Good boy..."  
+  "Who's a good boy?"  
+ linkappend "You're a good boy... You're a good boy..."  
+
+ Goodboygoodboygoodboygoodboygoodboy. 
+
+Shaking. Panting. Whining. Whimpering. There's a gloved hand on your cock, cold and rubbery, stroking and squeezing and teasing you. 
+
+"Good boy!"
+
+Good boy!
+
+"Such a good boy for me!"
+
+G-Good... Good boy!
+
+You-- You're a good boy!
+
+Another whimper as the hand grips tighter and speed up.
+
+"Come for me, puppy."
+
+C-Come...?
+
+"You wanna be a good boy, don't you?"
+
+  "N-No..."  
+ linkappend "Yes!"  
+
+The world spins and your brain sinks into muck, thoughts slipping through your fingers like sand.
+
+C-Can't...  C-Can't think... 
+
+"Be a good boy for me. Come for me."
+
+Good boy...
+
+"Come that little brain out!"
+
+C-Come?
+
+"Come all those pesky thoughts away!"
+
+ N-No... No thoughts? 
+
+"Come all that silly humanity out."
+
+H-Hu...  Human...? 
+
+Faster. Harder. Your entire body goes tense. Nostrils flaring. Panting hard. Eyes wide and bulging.
+
+[[Cum|Lycanroc TF 4]]
+\
+ 
+
+Heat and pleasure explode through you all at once as every mucle in your body grinds to a halt. 
+
+You're whimpering. Whining. Crying and shaking and thrusting your hips upwards as your orgasm hits. Ropes of hot, thick seed shoot onto your stomach and coat the man's hand. 
+
+ Goodboygoodboygoodboygoodboygoodboy. 
+
+A thick, impossible heat spreads across your skull and sinks into your brain, searing away every last human thought or memory. 
+
+"Gooood boy!" the man sings happily, still groping your need. "Good boy! Who's a good boy? Who's a good boy for Master?"
+
+Your tail slams hard against the ground, whipping back and forth on an unending loop. Every inch of you is buzzing in delight. 
+
+ linkappend "You're a good boy!"  
+
+You're a good boy. You're a good boy!
+
+"What a good Lycanroc! Such a good Lycanroc!"
+
+G-Good... Good Lycanroc! 
+
+Master lets you rest for a few minutes before finally rising to his feet. He tugs on your leash until you stand and leads you outside, towards the lone, empty kennel with the creamy brown roof.
+
+"In you go, Lycanroc."
+
+You obey, happily trotting into your home. The door seals shut behind you, locking with a heavy, iron thud.
+
+"Right in," Master coos, ushering you forward. "Go on."
+
+You crawl into the little enclosure, and as you do a light flashes from your collar. A screen attached to the back wall flickers to life, pulsing with colours that seem so... so... familiar...?
+
+  "Be a good dog."  
+  "Be a good boy."  
+ linkappend "Who's a good boy?"  
+
+The spirals of light seep into your eyes, reflecting like a perfect mirror as you jam your nose right up to the screen and stare dutifully at the colours, an intense feeling of warmth and relaxation washing over you.
+
+  "You're a good boy."  
+ link "Forever"  goto "BAD END"  /link 
+
+ 
+You're not meant to be here yet. 
+
+ link "Come back later!"  goto "Enter the building"  /link  <tw-passagedata pid="76" name="Untitled Passage 3" tags="" position="1100,100" size="100,100"> cycle "_thing" autoselect 
+ option "Be a good dog." 
+ option "Be a good boy." 
+ option "Who's a good boy?" 
+ /cycle  <tw-passagedata pid="77" name="Basement Main Hall" tags="" position="1000,1400" size="100,100">The layout here is immediately very different. Instead of a long, linear hallway, the room splits off into several different corridors, each of them leading to collection of large square rooms. The windows to each of them are blurred and darkened, casting the contents into secrecy.  Are these...test chambers? What have Team Rocket been doing?
+
+As always, almost every door is fitted with a blinking security box of various colours, and a sign above the door gives you rough idea of what you might find inside. 
+<hr>
+[[Latex Pokéball Lab]]
+\
+[[Elevator|Elevator Hall Basement]]  <tw-passagedata pid="78" name="Basement Double Doors" tags="noreturn" position="1100,1400" size="100,100"> if $hasRedcard 
+
+   [[Continue through the door|Basement Main Hall]]
+
+  Whoops! You shouldn't be seeing this, which means something's gone wrong. 
+  Here, take this  link "red card and try again." 
+
+  
+ <tw-passagedata pid="79" name="Latex Pokéball Lab" tags="" position="1000,1500" size="100,100"> switch $hasRedcard 
+ case false 
+  Whoops! You shouldn't be seeing this, which means something's gone wrong. 
+  Here, take this  link "red card and try again." 
+   set $hasRedcard to true 
+   script state.display(state.active.title, null, "back") /script 
+   /link 
+ 
+  case true 
+  set $location to "Basement: Latex Pokéball Lab" 
+  reddoor 
+ 
+A row of bright ceiling lights burst on one after the other as you enter, and the door hisses shut behind you. The room opens out into a large square space, the sound of your footsteps bouncing off the shiny floors and walls with every step taken. 
+
+But that's not what's notable.
+
+Stretching to every corner of the room are rows and rows of shiny black pokéballs, each one them towering over you. A bright red 'R' sits emblazened on the front of each of them, like a flaming symbol burning through the darkness.
+
+There's a sealed off room to your left, with glass panels in place of walls. You can't quite make out what's inside from here though.
+<hr>
+[[Approach the large pokéball]]
+\
+[[Sealed Room]]
+\
+[[Leave|Basement Main Hall]]
+\
+ /switch  <tw-passagedata pid="80" name="Approach the large pokéball" tags="noreturn" position="1000,1600" size="100,100">Your shoes squeak as they hit the ground, carrying you slowly towards the strange balls. No matter how you look at it...they're definitely meant to be pokéballs. By why are they so big?
+
+You stop just in front of the closes one, and freeze. There's... some kind of noise close by.
+
+  "Listen."  
+The world goes quiet around you - nothing but the sound of your own breath and heart. Focus... Listen... It's  mouseover  link "close."  /link 
+ onmousein 
+ replace "#moan"  
+ (Mmm... Mmpphh...! Mmnno!) 
+ /replace 
+ replace "#moan2"  
+A hot blade twists in your gut. Is... Is that a voice?
+<hr>
+[[Investigate|Latex Ball BadEnd]]
+
+ if !$gallery [[Run away|Latex Ball Run]] /if 
+ /replace 
+ onmouseout 
+ replace "#moan"   /replace 
+ /mouseover 
+ 
+
+
+ <tw-passagedata pid="81" name="Sealed Room" tags="noreturn" position="1100,1600" size="100,100">You approach the boxed-off room and peer through the glass panels. Inside, you can see another strange shiny pokéball, and beside it a large machine with a flashing screen.
+
+The door is sealed shut, a deep purple light blinking on the nearby security box.
+
+ switch $hasPurplecard 
+ case false 
+You rifle through your belt but come up empty. You'll need to find another key card to get in. (Coming Soon)
+<hr>
+[[Return to the entrance|Latex Pokéball Lab]]
+ case true 
+<hr>
+[[Enter the room|Experimental Rocket Ball]]
+\
+[[Return to the entrance|Latex Pokéball Lab]]
+ /switch 
+
+ <tw-passagedata pid="82" name="Experimental Rocket Ball" tags="" position="1100,1700" size="100,100">You're not meant to be here yet. 
+
+ link "Come back later!"  goto "Latex Pokéball Lab"  /link  <tw-passagedata pid="83" name="Latex Ball BadEnd" tags="noreturn" position="1000,1700" size="100,100">It has to be a voice. There's no way it can be anything else.
+
+Your eyes fall to the swarm of shiny balls and your heart skips. Is... Is there someone //inside// one of these?
+<hr>
+[[Try to open one of them|Latex Ball BadEnd 2]]
+\
+ if !$gallery [[Run away|Latex Ball Run]] /if  <tw-passagedata pid="84" name="Latex Ball Run" tags="noreturn" position="1100,1500" size="100,100">You almost fall over yourself, but you manage to scamper away from the rubber pokéball and return to the entrance of the room. Whatever sounds you had heard are gone, replaced once again with an eerie silence.
+
+[[Continue|Latex Pokéball Lab]]  <tw-passagedata pid="85" name="Latex Ball BadEnd 2" tags="noreturn" position="1000,1800" size="100,100"> set $buizelBadend to true 
+\
+You approach the one closest to you, brows furrowed. It’s massive, even taller than you and much wider. There are streaks of bright light painted down it, and every so often it seems to…move. Like it’s breathing.
+
+What…is this?
+
+  "Touch it"  
+Ignoring your better judgement, you press your hand to the red part of the ball. The cold, sticky material sends a shudder down your spine, and it squeaks beneath your fingers as you drag them down the front. It’s like some kind of weird rubber, and you let out a gasp as it groans and pulses under your skin.
+
+Of course, the other question is… what’s inside it?
+
+  "Press the button"  
+Just like a normal pokéball, the centre of the shell is divided in two by a white button. You graze down to it slowly, your hand shaking as the button depresses beneath it until it becomes flush with the ball. There’s a rumble, then a sticky, wet sloshing noise. Heat pours into the button and jolts up your hand like lightning, and you yank your arm back only seconds too late—
+
+The ball splits open and a torrent of shiny orange goo //explodes// from it.
+
+It slams into you, splitting into sticky tendrils that wrap around your chest and hook onto your back. You stumble backwards with a cry of shock, heart thundering, mind spinning.
+
+  "Struggle!"  
+Your hands move automatically, plunging into the thick goop clinging to your chest and yanking outward. Instead of tearing away from your body, the goo latches onto your arms and surges over your shirt, and a jolt of ice shoots down your spine as it begins rolling up your bare skin, searing through your clothes in the process. Cold. Sticky. Rubbery. You stare in horror as your entire arm disappears beneath it - skin and fabric completely covered by shiny orange latex, with thin blue wings jutting out the sides.
+
+But it’s not just there. As another tendril loops around your legs, there’s another horrible chill - right against your skin, followed by the weight of your clothes disappearing. You tear your eyes away and fix them on your legs, chest tight as the latex burns through your pants before sweeping onto your bare skin. Then it’s curling inwards, streaking over your cock and balls and slowly painting a line down your taint.
+
+No no no!
+
+Shaking. Breath fast. Head all static. The latex crawls over your shoulders and scales your neck, twisting and writhing like a den of shiny snakes. Vines of rubber twisting and coiling out into the empty air in front of you and converging into a single entity: a snout with a shiny black nose and fin-like hair protruding from the top. The hollow backside hovers just inches from your face, revealing an orange latex interior with two thin nasal tubes and—
+
+Is that a //dildo?//
+
+Thick, red and firm, with a gentle taper at the tip, protruding from where the mouth of the mask sits. A gasp. Eyes bulging. Panic squirms in your gut as latex snakes up the back of your head, long, drooping strands 
+
+You reach for your belt, fumbling uselessly with $partner.name's pokeball.  If you can—ngh— just  linkappend "grab it!"  
+
+There’s a click, a shift of weight, and your stomach plummets as the pokeball pops off the latch, crashing to the ground with a sickening crack. The sound of it rolling away fills your ears, and the latex seems to quiver excitedly in response. The strands pull taut, and your arm burns under the increasing pressure as the insides of the mask loom ever closer.
+
+No! No no no—
+
+//SMACK//
+
+All it takes is that one second. Your arm gives in and the mask slams into your face, the force sending you stumbling backward until you lose your footing on a puddle of goop. You crash onto the cold floor, writhing as the latex tubes squirm up your nose and the phallic plug plunges into your mouth.
+
+“Mmfgf? mMmgo!” 
+
+Snorting. Moaning. Your hands fly up in a panic and grope at your face, the useless round mitts unable to get any kind of grip on the snout of the mask. Even when you stretch behind it’s no use - the rubber’s already moving, forming an airtight seal over your flesh. You only get a few pathetic jabs at your skin and hair before it vanishes completely.
+
+“Mmf!” 
+
+  "Gotta get it off!"  
+There’s no give. No seam. No weakness. Even as you rub and yank on the rubber, all it does is squeak beneath your mitted hands. Your muffled, panicked groans get louder and louder as the rest of it ripples down your feet, tearing through your shoes and nudging between your toes. In seconds your human feet are gone: sealed away into clumsy rubber paws. 
+
+And then it’s  squirming. 
+
+Squeezing around— around your //cock//. Looping up the length and coating it in that same orange sheen. You stare helplessly, caught between a gasp and a moan as it swells to full mast, twitching and aching with need. Skin burning. Body tingling. F-Fuck… W-What’s happening? 
+
+Panting. Heat everywhere. Everything’s impossibly sensitive all of a sudden. Your head swims, the world spins around you, and the inescapable smell of rubber envelops everything. Every part of you is shaking. It’s a battle of fear and desperation in your mind, but your body is winning. 
+
+  "Touch it"  
+A wave of latex surges over it before you get the chance, pinning it to your stomach. Then another, and another, sealing it away into a thick, shiny bulge. You can feel your cock straining behind its new prison, desperate for release. 
+
+//F-Fuuuuck…!//
+
+  "Touch it!"  
+J-Just… Just a little.
+
+Can’t stop yourself. Your hands move on their own, shaking, hesitant for just a second: torn between escape and dealing with the need wracking your body, but the moment your hand grazes over it it’s all forgotten. Impossible pleasure rockets through you the moment you press down on the bulge, more intense than anything you’ve ever felt. You slam your head back with a shuddering moan, brows furrowed and eyes wild. 
+
+  "More"  
+Faster. Harder. Rubber grinding down onto rubber. Everything shaking. Nostrils flaring. 
+
+  "More!"  
+Even harder. The material creases beneath your hand with every stroke but never gives way. Heat and pleasure soar through you like a rocket. You gasp and bite down on the gag as your stomach starts flipping.
+
+You’re so close!
+
+  "More more more!"  
+Two hands now, tearing back and forth in long strokes. Everything else disappears from your mind as your orgasm builds and builds and builds. You’re trembling and moaning and oh god why does it feel so good?
+
+  "More! F-Fuck… Just a little more!"  
+Every nerve in your body burst into flames. Your hands are like a blur over the bulge, the padded mitts squeaking with every touch, but it’s all drowned out under your muffled whines. Eyes jammed shut, nose wrinkled, breath hard and hot and desperate. F-Feels so good… So good… So close…!
+
+ W-Why can’t you come? 
+
+It goes on for what feels like hours. The constant, unending pressure never ends. Your cock aches and whines and screams but—but you can’t come. C-Can’t… F-Fuck…
+
+Something cold slithers around your ankle, and it takes your lust soaked brain a few seconds too many to process it. 
+
+"Mmf?--"
+
+An impossible force yanks hard on your leg. Your eyes shoot open, panic squirming in your gut.
+
+W-What the fuck?
+
+“Mmff?!” You have just enough sense to slam your hands into the ground, arousal momentarily forgotten, forcing yourself to a hard stop. Panting. Eyes wide, staring down at your leg -  there’s a long, shiny black tendril wound around it, snaking across the floor like a predator. It’s still yanking insistently at your leg but there’s not enough strength behind it, and when you follow it back to the source—
+
+The large, rubbery Pokeball from earlier, the top lid stretched open like a hungry maw. Rivers of drooping, liquid black rubber ooze down from the rim, stretching and pooling like saliva. The insides are filled with a padded bed of shiny latex: both on the roof and the bed of the device.
+
+And your stomach twists as another tendril bursts out and snatches your other leg.
+
+  "Get away!"  
+Heart pounding. Mind screaming. You throw yourself onto your stomach and scramble for purchase on the floor, but it’s too late. The tendrils yank you even harder than before, dragging you like a sack across the floor. A low, horrified moan burst through you as you kick and squirm and flail but there’s no escape, no friction, nothing to grab onto. 
+
+“Nnmpho!” G-Gotta— Gotta get out! “MmffgGF! MMmf!” Gotta get help.
+
+Another pair of tendrils slam into your arms, followed by a thicker, yellow one around your neck. All of them fuse instantly to the rubber, squeezing tight around your skin. Your eyes bulge as more swarm around your crotch, pressing and rubbing and groping—
+
+“Mmf!” Snorting. Straining. Eyes wild. You’re shaking. The rubber groans as you writhe and pull and—
+
+The world spins and gravity betrays you. The tendrils force you from the ground and send you sailing backwards through the air screaming and kicking, forcing the world to stream past your eyes in a blur. You crash into the soft bed of rubber, staring skyward into an abyss of shiny blackness, squirming and moaning and—
+
+“Mmmf!” A flurry of heat grinds into your bulge. Pleasure arcs across your body and you squirm harder, faster as more and more tendrils join you. Sweeping across your chest and crawling over the snout of the mask. One wriggles between your legs and your blood runs cold as it nudges between your cheeks.
+
+//No no no—//
+
+It plunges into you, wet and sticky and hot and impossibly thick. You’re groaning, writhing, nose wrinkled as your nerves sing in delight. Then it’s moving, thrusting in and out, grinding down on a small bundle of nerves that make your cock leap and ache. 
+
+The darkness is closing in around you, but you can’t stop it. The top lid of the Pokeball descends onto you, pressing you tight between two layers of impenetrable rubber, and you’re screaming, moaning, flinging your head back and forth because no no no this can’t be happening!
+
+Tight, inescapable heat swarms your body as the light from outside vanishes. The rubber suit sticks tight to your skin, crushed between both layers, and every little movement sends a vibration rattling through the suit directly into your body. No room to move. No room to struggle - just enough to squirm desperately as your cock is endlessly teased under the pressure. Just enough to rut your hips upwards and—and get so, so close to orgasm. 
+
+ link "This is your new, permanent home."  goto "BAD END"  /link 
+
+
+    
+ goto "battle start"  <tw-passagedata pid="100" name="Easy Bad End 1" tags="noreturn" position="2800,200" size="100,100"> set $easyBattleBadend to true 
+ set _easyTransform to either("Growlithe", "Houndour", "Poochyena") 
+\
+You stagger backwards, staring helplessly between your exhausted partner and the approaching enemy, mind spinning and sputtering and barely functioning. Pokemon... You have to send out your next Pokémon!
+
+Your hands fly to your belt, but grasp at nothing, and your heart clenches as the realisation strikes. You only brought $partner.name!
+
+The crunch of leather snaps you back to reality. The Team Rocket Grunt looms over your exhausted Pokémon, staring at you with a sharp grin. 
+
+"Nice try," he says with a chuckle, producing a pitch-black, shiny pokéball from his belt and tapping the button in the centre. It expands in his hand with a soft hiss, reflecting the surrounding light. "But you're light-years from beating Team Rocket!"
+
+He hoists his arm back and takes aim at you, and fear slices through your stomach. Is he going to send out another Pokémon?
+
+  "Run!"  
+You wrench your body around and start to run, right as the pokéball goes sailing into the air--
+
+<em>SMACK</em>
+
+A dull ache radiates through your shoulder as the ball crashes into it, and you twist your head just in time to see a torrent of bright, shiny pink goo explode from the ball and slam into your face.
+
+"Ah—<em>Mmph?!</em>"
+
+It snatches around your head and upper body, thrusting you into impenetrable darkness, and a firm knot forms in your stomach as it oozes down your back, eating away at your clothes. The cold goo sticks to your skin like glue, and even as your hands fly up to claw at it there’s no give. 
+
+“Mff!” N-No! What is this stuff?
+
+  "Struggle!"  
+Nose wrinkled, eyes wild and heart thumping. Squirming, writhing, yanking uselessly at your face then at your chest, and then at your legs as the goo continues enveloping your body. A low moan of horror escapes your throat as it slides between your fingers, sealing your hands into useless mitts. Footsteps echo down the hall, muffled behind the layers of goo.
+
+"Ditto," comes the voice of the Rocket Grunt. "<em>Transform</em>."
+
+<em>Ditto?</em>
+
+There’s a horrible, warbling groan, followed by a rush of delighted heat all over you. The goo tightens to your skin, burning away the last of your clothing as it wriggles and twists around your body, creeping over your cock and forcing it into a tight, smooth bulge. You flail helplessly, smacking your hands against it as it solidifies. Two tendrils push into your nose whilst another, thicker one fills your mouth.
+
+"Mmf!" Your hands scream upwards, squeaking as they sink uselessly into your face. No eyes. No mouth. No nose. Nothing. Just blank. All the while, the goo twists and morphs around it, pushing out into a stubby canine snout. "Mm!"
+
+  "'Help! Help!'"  
+A rippling heat surges down your skin as another body joins your own. Chests pressed together, gloved hands firm on your cheeks. The Rocket grunt fastens something cold and hard around your neck, sealing it into place with a loud click—
+
+Pleasure rockets down your spine and forces you upright. You go stiff as his hands sweep down your body, quickly abusing your sealed up cock. Every touch against the bulge makes your cock scream in delight. 
+
+And again.
+
+"Mmf!"
+
+And <em>again.</em>
+
+'''<em>Mmmf! Mmmf!</em>'''
+
+Heat. The Rocket grunt lets out a shuddering, excited laugh, thrusting his own bulging need into your own.
+
+"That’s better," he purrs, giving your bulge another firm squeeze despite your struggling. “Mm… You’re gonna make a great pet for us. A <em>perfect</em> _easyTransform drone.”
+
+  "'No no no!'"  
+You wrench yourself backwards but he immediately grabs you again, his gloves squeaking against your new skin as he fumbles with the collar. There’s another metallic click, followed by a yank that flings your body forward. Eyes bulging and blind, you reach up and find an impossibly short leash leading back to his hand.
+
+"C’mon, puppy," he says with a harsh laugh, hauling you so hard that you almost fall over your feet. "Let's introduce you to the boys. They’re gonna <em>love</em> breaking you in."
+
+Squirming, Screaming. Yanking uselessly at the leash—
+
+ link "As he leads you to your new, permanent life as an _easyTransform drone" "BAD END"  /link 
+\
+ 
+
+\
+$partner.name lets out a slow, pleading cry, before crumbling to the floor unconscious. You stammer out his name, shaking and breath tense as the Incineroar finally turns his sights on you.
+
+And now there's //nothing// between you. 
+
+  "Run!"  
+You only make it a few steps before a boulder of muscle and fur rams into you from behind - the Incineroar sweeping across the floor in a blur of thundering black and red. With a loud THWACK you slam face first into the wall, barely managing to brace your arms to absorb most of the impact, pinned under the overwhelming heat of his body. Burly arms to either side of your head, his chest grinding into your back--
+
+Molten breath at your ear. You go stiff as his cold nose grazes your cheek, heart riping up your throat like a rampgaing train. 
+
+  "Scream for help!"  
+Seconds too late. The moment your lips part his hand whips onto your face, clamping down over your mouth and nose. Your voice cracks, breaks, then rumbles out in a panicked, muffled groan.
+
+"Mmmfgoo!"
+
+Squiming. Eyes bulging. Breath rapid and hot from your nose. He crushes you beneath him, plucking at the collar of your shirt with his claws—
+
+RIIIP
+
+The sound of tearing fabric rings in your ears. With one swift motion he slices your shirt in two, and a whine of horror tears through your throat as he snatches the tattered remains from your body, discarding them to the side and exposing you to the cold, sterile air. 
+
+W-Wait wait wait—
+
+Then he’s sweeping down your chest, his soft fur brushing across your skin like a blanket. Soft. Warm. Gentle. You’re shaking. Chest tight, stomach swirling, skin on fire as his hand wanders towards your legs. His breath at your ear, escaping in little growling puffs of hot air as he trails down… down—
+
+“Mmmf?” 
+
+He latches onto your crotch, wrenching his hand in small, forceful circles. Vines of fire plunge through the fabric and surge down your cock, and a horrible thrill billows down your legs when he squeezes.
+
+“Mmmf!”
+
+You leap out of your skin. Trembling. Moaning. Tearing your head from side to side. 
+
+  "Get him off!"  
+The hot flesh of his hand muffles your cry as you kick and flail, but it’s no use. His body is an iron brick against you, his grip tight and impenetrable, muscles of steel, and you can only moan and writhe as—as your cock betrays you. As it swells and hardens and aches until there’s an undeniable tent in your pants. 
+
+W-Wait—!
+
+F-Fuck… 
+
+Then up - his hand leaving your straining cock and returning to your chest, fingers splayed as he rubs across the bare skin. Pinching, groping, claws nipping but never tearing, leaving little trails of molten heat wherever they go. The heat burrows into organs and swims around your lungs and every little breath becomes harder than lead. Every little touch becomes impossibly sensitive—
+
+And—And then you look //down//.
+
+Patches of red and black fur poke out of your skin, sprouting out from under the Incineroar’s hand, and whenever he grazes over one of them your entire body explodes. A shuddering moan rips through your throat as he sweeps a finger upwards to circle your nipples, painting a thick line of fuzz that quickly blossoms and sweeps up onto your neck.
+
+  "W-Wait— Wait wait wait—!"  
+“Mmf?!!” W-What’s happening? “Mmmfgh! Mmfgh!” 
+
+The Incineroar shoves one of his legs under you and tightens his grip, mashing his snout into your cheek with a rumbling growl, breath hot enough to melt steel, and every fibre of your body sings in response. Your cock aches, your legs buckle, your voice cracks and shatters into a pathetic, mewling whimper. Everything goes white. Static floods your ears. The world streams and melts around you—
+
+C-Can’t breathe!
+
+Fire continues to lash at your skin, spreading lightning fast down your body and coating your flesh in thick layers of fur. It streaks down your legs in a billowing wave, incinerating your clothing as it goes and coiling around your feet. Your cock springs free, hard and hot and  weeping with need. Then up your arms and onto your hands, twisting and lashing and smothering them until there’s nothing left but soft, feline paws. You stare in part horror, part impossible arousal as thick, leathery pads sprout from the skin and your nails turn to claws and—
+
+Darkness envelops you suddenly. The Incineroar releases your mouth and drags his hand upwards, forcing the heat to surge up your face. He keeps you blinded whilst the fur begins to sprout, as it sweeps down the bridge of your nose and wraps under your jaw and loops around your skull. Pressure and heat and fire and—and—
+
+T-Too hot. There’s fire everywhere. Your breath hitches and your chest aches but— but you can’t push him away! Pleasure gushes down your cock and erupts like a geyser in your stomach. Your legs wobble and crack and groan as a slender tail erupts from your spine, but the Incineroar never lets you go. 
+
+Face aching, nose twitching, mouth quivering as your new snout grows in. Ears shifting, fur spreading, teeth and tongue aching as the Incineroar plunges his fingers into it. The world looks too sharp and your eyes hurt and—and—
+
+“Ain't that better?”
+
+There’s heat rippling out against your backside - hot and hard and aching with need, and your breath catches mid-whine as the Incineroar nuzzles into your changing ear.
+
+<span class="incineroar">“Sssh…”  Comes… comes his voice? It’s followed by a wave of torrid breath, and enveloped in a piercing purr that turns your brain to mush. “Just stay nice and still for me, kitten.”
+
+W-Wha… What…?
+
+W-Why… Why can you understand him?
+
+He plunges his fingers deeper into your mouth and crushes your bodies together, purring and growling until— until you can’t stop shuddering. Every little noise, every little puff of air against your ear, makes your brain stop. Makes your heart burst. It’s like a hand crushing your lungs. His scent is everywhere - cloying and warm and spicy, and every breath makes you moan and drool uncontrollably.  
+
+And in response to that, his cock //throbs// against your backside.
+
+<span class="incineroar">“Yeaaaaah…”  he purrs right in your ear. <span class="incineroar">“There’s no escaping it now, kitten. You’ve got my scent…’n now yer all mine.” 
+
+Y-You…  You're his? 
+
+The thought makes your heart skip and your cock leap. It swims around your head on repeat, coating every inch of your addled brain. 
+
+//You’re his. 
+
+You belong to him. 
+
+You need him.//
+
+You… B-But… W-What…
+
+W-What’s…  What’s happening? 
+
+Head throbbing, brows furrowed, body wrapped in an inescapable inferno. Even as he lets you go and twists you around you can’t even think about moving. Everything’s too hot and heavy and—
+
+You inhale and your mind goes blank. A horrible rush of pleasure screams down your spine and your fur stands on end. The Incineroar’s scent rushes through your nose and completely coats your brain.
+
+  "F-Fuck… C-Can’t… Can’t…"  
+He’s towering above you, chest rising and falling with impossibly hot breath. Leaning in, hands gripping your shoulders and pinning you to the wall, grinding his cock into your own in short, jabbing thrusts. Eyes like fire, piercing and bright and impossible to escape. His chest glistens with a thin layer of sweat and—and you can smell it so clearly. S-So… so hot… so addicting.
+
+He catches your dazed, vacant eyes, and sneers in delight.
+
+<span class="incineroar">“Oh yeah… Yer gonna be //perfect//…” 
+
+P-Perfect?
+<hr>
+ link "You… You’re perfect… Perfect…" "Incineroar Bad End 1a"  /link 
+\
+ link "N-No… You… You have to escape…" "Incineroar Bad End 1b"  /link 
+
+You stare impatiently at the red flashing security light for a few moments, but nothing happens. You'll need to find another keycard first.
+
+ return "Go back" 
+\
+ case true 
+You press the red keycard to the security box and the door slides open--
+
+To reveal a tall, burly Incineroar!
+
+You almost leap out of your skin, stumbling back a few steps as he saunters from the room, his golden eyes fixed viciously down at you. There's a pair of rubbery briefs clasped tight around his legs, with a large red 'R' burning bright where the material catches his...his crotch.
+
+Aching silence crushes you from all sides. You're trembling, heart pounding. The Incineroar just stares at you, his fanged mouth stretching into sharp sneer. 
+
+And then he launches himself at you!
+
+ link "Fight!" 
+	 set $enemy to "Incineroar" 
+     goto "battle prep" 
+ /link 
+ /switch 
+\
+ /if  <tw-passagedata pid="112" name="pokemonselected" tags="" position="200,300" size="100,100">[img[$partner.img]]
+    A $partner.name! Your closest friend. Hopefully you won't need to rely on him too much, but if things get dangerous in there... You might not have a choice but to fight. 
+    
+    With a deep breath you release the pokéball and look forward, finally ready to face the [[challenge|The Courtyard]]. 
+    
+
+P-Perfect… You…
+
+ N-Not human.
+
+G-Good boy.
+
+Good Pokémon. 
+
+Another shuddering breath. Fur standing on end. Nose twitching and eye-lids drooping and—
+
+  "C-Can’t… Can’t think…"  
+\
+ C-Can’t… Can’t think… 
+
+Everything’s on fire. Your skin, your fur, your brain, your cock, and it only gets worse when he hoists you into the air. Pressed against the wall, you have nowhere to go as he positions himself beneath you, gazing into your eyes with smouldering desire. There’s a flicker of heat across your legs as he nudges his cock into position and your eyes bulge as he braces it against your hole.
+
+<span class="incineroar">“Can’t even think, can ya?”  he growls, leering over you with his face only inches from your own. Every little purr and growl escapes in a rippling wave of heat. His bright eyes swallow everything.
+
+He flashes his teeth, and //plunges// inside you. 
+
+The world stops as he splits you open, burrowing into your core with sharp, jagged thrusts, each one earning a breathless gasp and whine from your lips. He’s too hot—too thick—too much—but your stomach purrs in delight. Nerves flaring and muscles spasming before falling limp as he drives deeper and deeper and deeper until—
+
+<span class="incineroar">“Fuuuuck….”  he snarls right as he hilts inside you, snout wrinkled and brows furrowed. 
+
+A sharp, shuddering gasp tears through you. Eyes wide, chest tight, body trembling, cock aching and desperate. The heat stews inside you, reverberating around your entire body and—f-fuck… Why does it feel so good? 
+
+You’re panting, feline tongue drooping from your mouth as he closes in on you. Snout at your cheek before drifting to your ear, his breath morphing into sharp, rippling growls.
+
+<span class="incineroar">“You’re //mine//.” 
+
+He punctuates it with a thrust, driving the air from your lungs. 
+
+<span class="incineroar">“Mine //forever//.” 
+
+Thrust.
+
+<span class="incineroar">“My little pet… My little Torracat.” 
+
+Another thrust. Harder. Faster. Your mind spins uncontrollably and every breath forces his scent into your lungs. 
+
+ T-Torra…cat? 
+
+//Good Pokémon. Be a good Pokémon. No more human.//
+
+Thrust.
+
+<span class="incineroar">“Gonna keep you like this forever. Never gonna turn you back. F-Fuck… Yer gonna love being mine.” 
+
+  "H-His… You’re his?"  
+\
+ All his. His toy. His good boy. 
+
+You’re whimpering. Whining. Cock drooling. It’s trapped between your bodies, crushed under his weight. C-Can’t touch it. Can’t reach it but—f-fuck you’re so close!
+
+//Thrust. Thrust. Thrust.// 
+
+Coated in his scent. The smell of need heavy in the air. The sound of skin against skin with each thrust. The way his cock fits inside you so perfectly. The Incineroar grunts and snorts and—and fucks you harder. Faster. Snouts brushing, noses bumping and lips brushing. Claws digging into your legs as he gets closer and closer and closer—
+
+F-Fuck…  F-Fuck fuck fuck… 
+
+Fire streaks through you and explodes from your cock in waves. He slams his mouth into yours and pumps you full, swallowing your desperate moans and ramming his hips into you until there’s nothing left. Your eyes flutter shut, mind swimming, body impossibly hot and numb as he claims your mouth. Claims your body. Claims your mind.
+
+Only once your joined orgasm fades does he pull back. Slowly, almost tenderly, he releases the kiss and bumps his snout against yours, staring into your lidded eyes.
+
+<span class="incineroar">“Mine,”  he repeats, and your body jolts in response. Static rolls across your skin, your fur stands on end, your cock and tail twitch and your breath hitches.
+
+//His.//
+
+And then he turns without another word, still embedded inside you, and carries you away.
+
+ link "His… Forever." "BAD END"  /link 
+\
+ 
+  <tw-passagedata pid="116" name="Incineroar Bad End 1b" tags="noreturn" position="3400,200" size="100,100"> set $incinCount += 1 
+\
+It’s so impossible to move but you somehow manage to swing your body to the side, tearing yourself away from him—
+
+<span class="incineroar">"Where d’ya think your goin’?" 
+
+He moves like lightning, snatching you within seconds, cradling the back of your skull with a tight, impenetrable grip, and yanks you around to face him. Still sneering, he raises his other arm up high to reveal his armpit: the red fur inside glistening with sweat.
+
+<span class="incineroar">"Guess ya need a little more convincing, hm?" 
+
+  "W-Wait no no no no!"  
+He slams your head under his arm, crushing your snout into his sweaty pit and smothering your struggling cries in his fur. Straining, squirming, brows furrowed and nose wrinkled and lungs burning until—until you can’t… can’t—-
+
+//Breathe.//
+
+The smell hits you like a truck  and your entire body goes limp. Burning, rippling fire foods every inch of your body and your cock aches and twitches—
+
+//Breathe.//
+
+Another noseful. Your sensitive feline nose twitches as the rich, masculine scent floods your lungs. Eyelids drooping, body quivering, cock leaking against his leg.
+
+<span class="incineroar">"Good boy…"  comes his voice and praise only makes it worse. <span class="incineroar">"Get that nose riiiight in there. Breathe nice ‘n deep fer me...” 
+
+  "Breathe…"  
+\
+<span class="incineroar">“Good boy…” 
+
+G- Good boy…? 
+
+<span class="incineroar">"That's a //good// kitten…" 
+
+K-Kitten?
+
+B-But… y-you...
+
+Aren't you human?
+
+The warmth lingers on your snout even when he releases you. You stand there dazed, eyes unseeing, body tingling and numb, before the world gives way. Your knees slam into the floor, mind buzzing and spinning and burning—
+
+Claws on your head, fingers drumming against your scalp. Hot, musky flesh meets your wet feline nose and your entire body breaks when—when you inhale.
+
+F-Fuuuuck…
+
+<span class="incineroar">"Like that smell?"  comes the Incineroar's voice. He's playing with your ears whilst the other hand pins your snout in place.. <span class="incineroar">"C'mon… take another breath. Nice 'n deep through that cute little nose..." 
+
+Head spinning. Brain on fire. Y-You… B-But...
+
+  "Breathe…?"  
+\
+Every nerve in your body screams in delight. Long, slow breaths through your nose, drawing in as much of his scent as you can. Hot, masculine, rich. Makes your heart hammer. Makes your body buzz and burn and ripple and your cock ache desperately.
+
+<span class="incineroar">"Good boy…" 
+
+G-Good boy.
+
+<span class="incineroar">"Good Torracat…" 
+
+ G-Good… Good… 
+
+  "Human?"  
+Torracat...
+
+The thought pierces through your soul. Breath caught in your throat, lungs tensed, cock throbbing and aching.
+
+  "Y-You're... You're a good Torracat"  
+<span class="drunk2">Good Torracat.
+
+Perfect Torracat.
+
+Never human. 
+
+He's dripping. It smells amazing. Tastes amazing when—when you take him into your mouth. Hot and salty and perfect and amazing—
+
+<span class="incineroar">"Gooood boy…"  he growls, still cradling your head, guiding your every move. <span class="incineroar">“Mmf… Yeah… Just like that…” 
+
+The praise ripples across your brain in little fiery bolts of electricity. You swallow his cock obediently and take it all the way to the back of your throat, earning a delighted growl that makes your fur stand on end. You push even further until your nose meets his crotch and the rush of musk sends your mind tumbling.
+
+G-Good… Good Torracat…
+
+Before long you’re bobbing up and down, lashing your tongue wherever you can reach, one hand planted on his thigh for support whilst the other blurs over your cock. The taste, the scent, the heat— S-So good. So… So perfect…
+
+  "Faster."  
+\
+Bobbing quicker and deeper and harder. Breathing hard through your nose. 
+
+  "Faster!"  
+\
+The Incineroar goes stiff, breath as harsh and hot as his voice. His claws dig through your fur. 
+
+  "Fasterfasterfaster!"  
+\
+There’s a shuddering groan, followed by stiff, robotic movements and a deafening roar. He jerks his arm and your head flies forwards, snout crushed into his crotch as he fills your mouth, and seconds later your own orgasm follows. Hot, sticky cum coats your tongue in waves and dribbles down the back of your throat whilst your own need paints your stomach. 
+
+<span class="incineroar">“F-Fuck…”  he growls above you, breath slow and shuddering. He peels you off his cock and smacks it against your nose, still impossibly hard and hot. <span class="incineroar">“Fuck… You’re a real keeper.” 
+
+<span class="brainwash"> 
+
+Your brain is burning, body wracked by your own orgasm. Can’t think. Can’t speak. All you can do is breathe and his scent drives you wild. S-Smells so good… So so so so sooo good.
+
+So you don’t complain when he pulls you back in and buries your snout in his crotch. Don’t complain when he plays with your ears and purrs praise that makes your body ache for more. Don’t complain when he calls you by your name.
+
+<span class="drunk2">T-Torracat... 
+
+You’re a good Torracat… 
+
+ link "Forever." "BAD END"  /link 
+
+Good Torracat 
+
+<span class="drunk2">Not human 
+
+
+<div class="brainwash"></div>
+ <tw-passagedata pid="118" name="Use Item" tags="noreturn battle" position="2400,400" size="100,100">You used a _item!
+
+ link "Continue" "Check if Enemy alive"  /link  <tw-passagedata pid="119" name="Peek through the keyhole" tags="noreturn" position="625,1300" size="100,100">There's just enough light on the other side to make out some of the room. You press one eye to the keyhole and focus.
+
+Large, metal cages, and a table in the centre of the room. Discarded sex toys lie strewn around it, the dim ceiling light reflecting off the smooth, shiny surface, and beside them there's a strange fetish mask in the shape of...
+
+...is that a Growlithe?
+
+What... could this room possibly be for?
+
+(Coming soon)
+
+ return "Back"  <tw-passagedata pid="120" name="First Floor Staff Room" tags="" position="1700,700" size="100,100"> first 
+With a snarl, the hulking fire type staggers backwards, snout wrinkled and eyes pinched. His breath falls harsh and rapid from his mouth, trembling in exertion every other second. 
+
+You stand your ground, waiting for him to make his next move, but it never comes.
+
+Instead, the Incineroar straightens himself, one arm slung over his chest, and stares you down with a piercing hot gaze. He raises his hands and gestures two fingers at his eyes, before returning the motion back to you with another snarl. The meaning rings clear in your mind.
+
+//He's not done with you yet//.
+
+He holds the stance for a few seconds before retreating down the hallway, dragging himself through the double doors and out of sight, leaving you alone.
+
+[[Enter the room|First Floor Staff Room]]
+\
+[[Explore somewhere else|First Floor Doors Hub]]
+\
+ finally 
+A small, warm room greets you as you step through the door. On one side there's a small kitchen area, complete with various applicances and counter tops, and on the other there's a small lounge area, fitted with seats and tables all smothered in a lush black and red colouring. For Team Rocket... It looks pretty nice.
+
+A warm, spicy fragrance rides the air, and just breathing it in leaves you warm and tingling all over.
+
+It might be worth searching around for supplies... (Coming soon)
+
+[[Explore somewhere else|First Floor Doors Hub]]
+ /first  <tw-passagedata pid="121" name="Uniform Boxes" tags="noreturn" position="600,900" size="100,100">You open a few of the differently labeled boxes and rummage around, pulling out a full set of Team Rocket apparal. 
+
+Maybe sometime in the future you could use this, but right now there's no need.
+
+
+You step through the door, right into the path of a Team Rocket Grunt!
+
+Barely avoiding a collision, the pair of you step back, and it takes him a few seconds to wipe the bewilderment off of his face.
+
+"Hey..." he says finally, narrowing his eyes. "You shouldn't be here!"
+
+You go tense, thumbing at the pokeball on your belt. No way outta this one!
+
+You have to  link "fight!" "battle prep"  set $enemy to "Easy Grunt"  set $bossBattle to true  /link 
+\ <tw-passagedata pid="123" name="Tutorial Fight Win" tags="noreturn" position="1000,600" size="100,100"> set $beatTutorial to true 
+\
+Startled, the Team Rocket Grunt turns tail and flees around the corner, and there's a clunk of metal as something falls from his pocket and clatters to the floor. 
+
+  "Pick it up"  
+You bend down and scoop up the item. Large, red letters are etched down the center, spelling out 'Elevator' very clearly. It looks like another security card.
+
+With the path clear, you right yourself and recall $partner.name into his pokeball for now. it's time to keep going.
